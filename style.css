@@ -1,0 +1,30 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+* {
+    font-family: 'Alegreya Sans';
+}
+
+header {
+    background-color: #072D2E;
+}
+
+.header,
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fcfcfc;
+    padding: 25px 70px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.navegador {
+    display: flex;
+    gap: 45px;
+}
+
+.navegador a {
+    color: #fcfcfc;
+}
