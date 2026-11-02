@@ -3,6 +3,15 @@
 
 * {
     font-family: 'Alegreya Sans';
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Merriweather';
+    font-size: 25px;
+    margin-bottom: 5px;
 }
 
 header {
@@ -18,6 +27,27 @@ nav {
     padding: 25px 70px;
     max-width: 1400px;
     margin: 0 auto;
+    font-size: 18px;
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.contenedor-buscador {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ffffff;
+    background-color: #072D2E;
+    border-radius: 8px;
+    padding: 8px 70px 8px 15px;
+}
+
+.contenedor-buscador input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 14px;
+    width: 150px;
+    font-family: "Alegreya Sans SC", sans-serif;
 }
 
 .navegador {
@@ -27,4 +57,132 @@ nav {
 
 .navegador a {
     color: #fcfcfc;
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+
+
+
+
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #9e9e9e;
+}
+
+.contenedor-inicio {
+    display: flex;
+    gap: 90px;
+    padding: 80px 60px;
+    max-width: 900px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #072D2E;
+}
+
+.contenedor-card-inicio {
+    max-width: 300px;
+}
+
+
+
+.campo-rellenar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.campo-rellenar form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.campo-rellenar p, a{
+    color: #CF7D1E;
+
+}
+
+.formulario-correo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.btn-siguiente {
+    background-color: #CF7D1E;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: #FFFFFF;
+}
+
+.versalita {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+footer {
+    background-color: #072D2E;
+    color: #fcfcfc;
+    width: 100%;
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.footer-columna h3 {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 16px;
+}
+
+.footer-contenedor {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.footer-arriba {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-abajo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logos-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.footer-columna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-columna a {
+    color: #cccccc;
+    font-size: 14px;
 }

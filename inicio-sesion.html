@@ -29,9 +29,9 @@
         <nav>
             <img src="img/img/logos/bk-logo-header.svg" alt="logo de Butkus" width="67" height="67">
             <div class="navegador">
-                <a href="#">Conocenos</a>
-                <a href="#">Recursos</a>
-                <a href="#">Contactanos</a>
+                <a href="#">conocenos</a>
+                <a href="#">recursos</a>
+                <a href="#">contactanos</a>
             </div>
 
             <div>
@@ -51,7 +51,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contenedor">
         <section class="contenedor-inicio">
             <div class="contenedor-card-inicio">
                 <h3>Inicia sesión</h3>
@@ -59,20 +59,21 @@
             </div>
 
             <div class="campo-rellenar">
-                <form action="#" method="post" enctype="text/plain">
-                    <label for="email">email</label>
-                    <input type="email" name="Email" id="Email" placeholder="Correo electrónico" required>
-                </form>
-                <p>¿Has olvidado tu correo electrónico?</p>
-            </div>
+                <div>
+                    <form action="#" method="post" enctype="text/plain">
+                        <label for="email" class="versalita">email</label>
+                        <input type="email" name="Email" id="Email" placeholder="Correo electrónico" required>
+                    </form>
+                    <p>¿Has olvidado tu correo electrónico?</p>
+                </div>
 
-            <div class="formulario-correo">
-                <a href="#">Crear cuenta</a>
-                <input type="submit" value="siguiente" class="btn-siguiente">
+                <div class="formulario-correo">
+                    <a href="#">Crear cuenta</a>
+                    <input type="submit" value="siguiente" class="btn-siguiente">
+                </div>
             </div>
         </section>
     </main>
-
 
     <footer>
         <div class="footer-contenedor">
@@ -87,42 +88,15 @@
                 <img src="img/img/logos/bk-footer.svg" alt="version corta logo bk" width="48" height="33"/>
             </div>
 
-            <div class="footer-columna">
-                <h3>contenido</h3>
-                <ul>
-                    <li>¿Quiénes somos?</li>
-                    <li>Documentación</li>
-                    <li>Catálogo</li>
-                    <li>Foro</li>
-                    <li>Inicio de sesión</li>
-                </ul>
             </div>
-
-            <div class="footer-columna">
-                <h3>recursos</h3>
-                <ul>
-                    <li>Tiendas sugeridas</li>
-                    <li>Novedades</li>
-                    <li>Fotografías</li>
-                    <li>Datos técnicos</li>
-                </ul>
-            </div>
-
-            <div class="footer-columna">
-                <h3>legales</h3>
-                <ul>
-                    <li>Terminos y condiciones</li>
-                    <li>Politica de privacidad</li>
-                    <li>Derechos de autor</li>
-                </ul>
+            <div class="footer-abajo">
+                <p>Butkus. Todos los derechos reservados.</p>
+                <img src="img/logo-butkus.png" alt="logo Butkus">
             </div>
             <p>Butkus. Todos los derechos reservados</p>
             <img src="img/img/logos/mike-footer.svg" alt="logo Butkus" width="401" height="323">
 
         </div>
-    </footer>
-
-
 
 </body>
 
