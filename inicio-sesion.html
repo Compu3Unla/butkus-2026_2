@@ -29,15 +29,15 @@
         <nav>
             <img src="img/" alt="logo de Butkus">
             <div class="navegador">
-                <a href="#">Conocenos</a>
-                <a href="#">Recursos</a>
-                <a href="#">Contactanos</a>
+                <a href="#">conocenos</a>
+                <a href="#">recursos</a>
+                <a href="#">contactanos</a>
             </div>
 
             <div>
-                <form action="/buscar" method="get" enctype="text/plain" class="contenedor-buscador">
-                    <label for="search-input" class="ocultar-nav" img src="img/">Buscar</label>
-                    <input type="search" id="search-input" name="q" placeholder="Buscar" required>
+                <form class="contenedor-buscador" action="/buscar" method="get" enctype="text/plain">
+                    <label for="search-input" class="ocultar-nav" img src="img/"></label>
+                    <input type="search" id="search-input" name="q" placeholder="buscador" required>
                 </form>
             </div>
 
@@ -51,7 +51,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="contenedor">
         <section class="contenedor-inicio">
             <div class="contenedor-card-inicio">
                 <h3>Inicia sesión</h3>
@@ -59,69 +59,75 @@
             </div>
 
             <div class="campo-rellenar">
-                <form action="#" method="post" enctype="text/plain">
-                    <label for="email">email</label>
-                    <input type="email" name="Email" id="Email" placeholder="Correo electrónico" required>
-                </form>
-                <p>¿Has olvidado tu correo electrónico?</p>
-            </div>
+                <div>
+                    <form action="#" method="post" enctype="text/plain">
+                        <label for="email" class="versalita">email</label>
+                        <input type="email" name="Email" id="Email" placeholder="Correo electrónico" required>
+                    </form>
+                    <p>¿Has olvidado tu correo electrónico?</p>
+                </div>
 
-            <div class="formulario-correo">
-                <a href="#">Crear cuenta</a>
-                <input type="submit" value="siguiente" class="btn-siguiente">
+                <div class="formulario-correo">
+                    <a href="#">Crear cuenta</a>
+                    <input type="submit" value="siguiente" class="btn-siguiente">
+                </div>
             </div>
         </section>
     </main>
 
-
     <footer>
         <div class="footer-contenedor">
-            <div>
-                <p>mike@butkus.org</p>
-                <ul class="logos-footer">
-                    <li><a href="#"><img src="img" alt="logo twitter" width="30px" height="30px"></a></li>
-                    <li><a href="#"><img src="img" alt="logo instagram" width="30px" height="30px"></a></li>
-                    <li><a href="#"><img src="img" alt="logo youtube" width="30px" height="30px"></a></li>
-                    <li><a href="#"><img src="img" alt="logo linkedin" width="30px" height="30px"></a></li>
-                </ul>
-            </div>
+            <div class="footer-arriba">
+                <div class="footer-columna">
+                    <p>mike@butkus.org</p>
+                    <ul class="logos-footer">
+                        <li><a href="#"><img src="img/twitter.png" alt="logo twitter" width="30" height="30"></a></li>
+                        <li><a href="#"><img src="img/instagram.png" alt="logo instagram" width="30" height="30"></a>
+                        </li>
+                        <li><a href="#"><img src="img/youtube.png" alt="logo youtube" width="30" height="30"></a></li>
+                        <li><a href="#"><img src="img/linkedin.png" alt="logo linkedin" width="30" height="30"></a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-columna">
-                <h3>contenido</h3>
-                <ul>
-                    <li>¿Quiénes somos?</li>
-                    <li>Documentación</li>
-                    <li>Catálogo</li>
-                    <li>Foro</li>
-                    <li>Inicio de sesión</li>
-                </ul>
-            </div>
 
-            <div class="footer-columna">
-                <h3>recursos</h3>
-                <ul>
-                    <li>Tiendas sugeridas</li>
-                    <li>Novedades</li>
-                    <li>Fotografías</li>
-                    <li>Datos técnicos</li>
-                </ul>
-            </div>
+                <div class="footer-columna">
+                    <h3>
+                        <h3>contenido</h3>
+                    </h3>
+                    <ul>
+                        <li><a href="#">¿Quiénes somos?</a></li>
+                        <li><a href="#">Documentación</a></li>
+                        <li><a href="#">Catálogo</a></li>
+                        <li><a href="#">Foro</a></li>
+                        <li><a href="#">Inicio de sesión</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-columna">
-                <h3>legales</h3>
-                <ul>
-                    <li>Terminos y condiciones</li>
-                    <li>Politica de privacidad</li>
-                    <li>Derechos de autor</li>
-                </ul>
-            </div>
-            <p>Butkus. Todos los derechos reservados</p>
-            <img src="img" alt="logo Butkus">
+                <div class="footer-columna">
+                    <h3>recursos</h3>
+                    <ul>
+                        <li><a href="#">Tiendas sugeridas</a></li>
+                        <li><a href="#">Novedades</a></li>
+                        <li><a href="#">Fotografías</a></li>
+                        <li><a href="#">Datos técnicos</a></li>
+                    </ul>
+                </div>
 
+                <div class="footer-columna">
+                    <h3>legales</h3>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Derechos de autor</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-abajo">
+                <p>Butkus. Todos los derechos reservados.</p>
+                <img src="img/logo-butkus.png" alt="logo Butkus">
+            </div>
         </div>
-    </footer>
-
-
 
 </body>
 
