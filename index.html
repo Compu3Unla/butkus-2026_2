@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Butkus | Index</title>
+    <title>Butkus | Inicio </title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,9 +29,9 @@
         <nav>
             <img src="img/img/logos/bk-logo-header.svg" alt="logo de Butkus" width="67" height="67">
             <div class="navegador">
-                <a href="#">Conocenos</a>
+                <a href="#">conocenos</a>
                 <details class="menu-desplegable">
-                    <summary>Recursos</summary>
+                    <summary>recursos</summary>
 
                     <div class="submenu-flotante">
 
@@ -51,7 +51,7 @@
 
                         <details class="sub-details">
                             <summary>
-                                <p class="links-nav">tutorials <img src="img/img/logos/flecha-blanca-chiquita.svg"
+                                <p class="links-nav">tutoriales <img src="img/img/logos/flecha-blanca-chiquita.svg"
                                         alt="flecha-derecha-blanca" height="14px" width="12px" /></p>
                             </summary>
                             <div class="sub-links">
@@ -75,21 +75,22 @@
                         </details>
                     </div>
                 </details>
-                <a href="#">Contactanos</a>
+                <a href="#">contactanos</a>
             </div>
 
 
             <div>
                 <form action="/buscar" method="get" enctype="text/plain" class="contenedor-buscador">
-                    <label for="search-input" class="ocultar-nav" img src="img/img/logos/icono_lupa.svg">Buscar</label>
-                    <input type="search" id="search-input" name="q" placeholder="Buscar" required>
+                    <label for="search-input" class="ocultar-nav"></label>
+                    <img src="img/img/logos/icono_busqueda.svg" height="24" width="24"/>
+                    <input type="search" id="search-input" name="search-input" placeholder="Buscar" required>
                 </form>
             </div>
 
             <ul>
                 <li class="logos-header">
-                    <a href="index.html"><img src="img/img/logos/icono-home-header.svg" alt="logo casa" width="30px"
-                            height="30px"></a>
+                    <a href="index.html"><img src="img/img/logos/icono-home-header.svg" alt="logo casa" width="25px"
+                            height="25px"></a>
                     <a href="inicio-sesion.html"><img src="img/img/logos/icono-usuario_header.svg" alt="logo usuario"
                             width="30px" height="30px"></a>
                     <a href="#"><img src="img/img/logos/icono_mensaje_header.svg" alt="logo mensaje" width="30px"
@@ -103,7 +104,7 @@
         <section class="animacion-inicio-butkus">
             <img src="img/img/otras-img/animacion-butkus-inicio.gif" alt="animacion-butkus-inicio" />
         </section>
-
+        <h1>Butkus Camera Manual Library</h1>
         <section class="contenedor-carrusel-novedades">
             <div class="imagenes-carrusel-novedades">
                 <img src="img/img/logos/carrusel-1.png" alt="carrusel-1" />
@@ -118,10 +119,13 @@
 
         <section class="catalogo-carrusel">
             <div class="info-catalogo-index">
-                <h2>Catálogo</h2>
-                <p class="nav">ver todas las categorías <img src="img/img/logos/flecha-naranja-chiquita.svg" /></p>
+                <div class="lpm">
+                    <h2>catálogo</h2>
+                    <p class="nav">ver todas las categorías <img src="img/img/logos/flecha-naranja-chiquita.svg" /></p>
+                </div>
                 <p>Encontrá la documentación que necesitas.</p>
-                <img src="img/img/logos/miscelanea-linea-verde.svg" alt="miscelanea-linea-verde" />
+                <img src="img/img/logos/miscelanea-linea-verde.svg" alt="miscelanea-linea-verde" height="10"
+                    width="115" />
             </div>
 
             <div class="imagenes-catalogo-index">
@@ -132,16 +136,17 @@
                 <img src="img/img//1-1-catalogo/catalogo-dsrl.png" alt="catalogo-dsrl" width="248" height="261" />
                 <img src="img/img//1-1-catalogo/catalogo-de-video.png" alt="catalogo-de-video" width="248"
                     height="261" />
-
             </div>
+
         </section>
 
 
         <section class="documentacion-index">
             <div class="info-documentacion-index">
-                <h2>Documentación</h2>
+                <h2>documentación</h2>
                 <p>Encontrá la documentación que necesitas.</p>
-                <img src="img/img/logos/miscelanea-linea-verde.svg" alt="miscelanea-linea-verde" />
+                <img src="img/img/logos/miscelanea-linea-verde.svg" alt="miscelanea-linea-verde" height="10"
+                    width="115" />
             </div>
 
             <article class="recursos">
@@ -150,28 +155,34 @@
                     <article class="boton-impresion">
                         <img src="img/img/logos/logo-pdf.svg" alt="icono-problemas-impresion" width="152"
                             height="144" />
-                        <h3>01./ Problemas de impresión</h3>
-                        <p>¿Estás teniendo problemas para imprimir algún archivo? Acá vas a encontrar la información
-                            necesaria.</p>
+                        <div class="info-btn">
+                            <h3>01./ Problemas de impresión</h3>
+                            <p>¿Estás teniendo problemas para imprimir algún archivo? Acá vas a encontrar la información
+                                necesaria.</p>
+                        </div>
                     </article>
 
                     <article class="boton-reparacion">
                         <img src="img/img/logos/icono-reparacion.svg" alt="icono-reparacion" width="145" height="145" />
-                        <h3>03./ Reparación y mantenimiento</h3>
-                        <p>Podrás encontrar una ayuda pertinente para tu tipo de cámara, y tambíen descargarla.</p>
+                        <div class="info-btn">
+                            <h3>03./ Reparación y mantenimiento</h3>
+                            <p>Podrás encontrar una ayuda pertinente para tu tipo de cámara, y tambíen descargarla.</p>
+                        </div>
                     </article>
 
                     <article class="boton-manuales">
                         <img src="img/img/logos/icono-libro-abierto.svg" alt="icono-libro-abierto" width="188"
                             height="159" />
-                        <h3>04./ Manuales de Usuario</h3>
-                        <p>Accedé a todos nuestros manuales en diversos formatos y sin límites de descarga.</p>
+                        <div class="info-btn">
+                            <h3>04./ Manuales de Usuario</h3>
+                            <p>Accedé a todos nuestros manuales en diversos formatos y sin límites de descarga.</p>
+                        </div>
                     </article>
                 </div>
 
                 <div class=documentacion-columna_der>
                     <article class="boton-compatibilidad">
-                        <div class="botones-formularios-compatibilidad">
+                        <div class="botones-formularios">
                             <p class="boton-formularios">Flash</p>
                             <p class="boton-formularios">Medidor de luz</p>
                             <p class="boton-formularios">Flashes Canon</p>
@@ -179,23 +190,28 @@
                             <p class="boton-formularios">Medidor de flashes</p>
                             <p class="boton-formularios">y más...</p>
                         </div>
-                        <h3>02./ Compatibilidad y accesorios</h3>
-                        <p>Podrás encontrar una ayuda pertinente para tu tipo y modelo de cámara y descargarlo en varios
-                            formatos.</p>
+                        <div class="info-btn">
+                            <h3>02./ Compatibilidad y accesorios</h3>
+                            <p>Podrás encontrar una ayuda pertinente para tu tipo y modelo de cámara y descargarlo en
+                                varios formatos.</p>
+                        </div>
                     </article>
 
                     <article class="boton-antiguas">
                         <img src="img/img/logos/icono-camara.svg" alt="icono-camara-antigua" width="116" height="244" />
-                        <h3>05./ Guías de cámaras antiguas. De los años '60 - '80</h3>
-                        <p>Encontrá manuales actuales y de época en varios formatos, con o sin ilustraciones y detalles
-                            del precio de lista.</p>
+                        <div class="info-btn">
+                            <h3>05./ Guías de cámaras antiguas. De los años '60 - '80</h3>
+                            <p>Encontrá manuales actuales y de época en varios formatos, con o sin ilustraciones y
+                                detalles
+                                del precio de lista.</p>
+                        </div>
                     </article>
                 </div>
             </article>
         </section>
 
         <section class="ayuda">
-            <p class="ayuda">¿En qué te puedo ayudar?</p>
+            <p class="frase-donacion"><span class="italic"> ¿En qué te puedo ayudar?</span></p>
             <img src="img/img/otras-img/gif-mike-ayudante.gif" alt="gif-mike-ayudante" width="175" height="175" />
         </section>
 
@@ -206,53 +222,61 @@
 
             <div class="contenedor-cards-estadisticas">
 
-            <article class="card-estadisticas">
-                <img src="img/img/logos/icono-usuarios-registrados.png" alt="icono-usuarios-registrados" width="60" height="60"/>
-                <h4>Usuarios registrados</h4>
-                <h3>+15M</h3>
-                <p>Más de 15 millones de usuarios registrados en todo el mundo buscando y compartiendo material técnico fotográfico.</p>
-            </article>
+                <article class="card-estadisticas">
+                    <div class="presentacion-tema">
+                        <img src="img/img/logos/icono-usuarios-registrados.png" alt="icono-usuarios-registrados" width="60" height="60" />
+                        <h4>Usuarios registrados</h4>
+                    </div>
+                    <h3>+15M</h3>
+                    <p>Más de 15 millones de usuarios registrados en todo el mundo buscando y compartiendo material
+                        técnico fotográfico.</p>
+                </article>
 
-            <article class="card-estadisticas">
-                <img src="img/img/logos/icono-documentos-registrados.png" alt="icono-documentos-archivados" width="60" height="60"/>
-                <h4>Documentos archivados</h4>
-                <h3>+5M</h3>
-                <p>Documentos con acceso libre a descargas, foros y material exclusivo.</p>
-            </article>
+                <article class="card-estadisticas">
+                    <div class="presentacion-tema"><img src="img/img/logos/icono-documentos-registrados.png"
+                            alt="icono-documentos-archivados" width="60" height="60" />
+                        <h4>Documentos archivados</h4>
+                    </div>
+                    <h3>+5M</h3>
+                    <p>Documentos con acceso libre a descargas, foros y material exclusivo.</p>
+                </article>
 
-            <article class="card-estadisticas">
-                <img src="img/img/logos/icono-alcance-internacional.png" alt="icono-alcance-internacional" width="60" height="60"/>
-                <h4>Alcance internacional</h4>
-                <h3>+100 paises</h3>
-                <p>Facilitamos el acceso libre a documentación y manuales de cámaras desde cualquier lugar del mundo.</p>
-            </article>
+                <article class="card-estadisticas">
+                    <div class="presentacion-tema">
+                        <img src="img/img/logos/icono-alcance-internacional.png" alt="icono-alcance-internacional"
+                            width="60" height="60" />
+                        <h4>Alcance internacional</h4>
+                    </div>
+                    <h3>+100 paises</h3>
+                    <p>Facilitamos el acceso libre a documentación y manuales de cámaras desde cualquier lugar del
+                        mundo.</p>
+                </article>
 
             </div>
         </section>
 
-         <section class="atencion">
+        <section class="atencion">
             <h3 class="blanco">Cuidado con las descargas falsas</h3>
             <p class="nav">nuestros documentos cuentan con certificación oficial</p>
         </section>
 
         <section class="donacion">
-            <p class="frase-donacion">¿Te resultó útil nuestro contenido? Las <span class="italic">donaciones</span> se
-                aceptan con una <span class="italic">sonrisa</span></p>
-            <a href="donacion.html"><button class="boton-marco-naranja">Ayudanos</button></a>
+            <p class="frase-donacion">¿Te resultó útil nuestro contenido?</p>
+            <p class="frase-donacion">Las <span class="italic">donaciones</span> se aceptan con una <span
+                    class="italic">sonrisa</span></p>
+            <a href="donacion.html"><button class="btn-marco-naranja">Ayudanos</button></a>
         </section>
 
         <section class="newsletter">
             <div class="info-newsletter">
                 <h3 class="blanco">No te pierdas de nada</h3>
                 <p class="nav">novedades, nuevos manuales y actualizaciones.</p>
-
-                <form action="#" method="post" enctype="text/plain">
-                    <label for="email" class="versalita"></label>
-                    <input type="email" name="Email" id="Email" placeholder="Correo electrónico" required>
-                    <input type="submit" value="Suscribirme">
-                </form>
-
             </div>
+            <form action="#" method="post" enctype="text/plain">
+                <label for="email" class="versalita"></label>
+                <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                <input type="submit" value="Suscribirme" class="btn-siguiente">
+            </form>
         </section>
 
     </main>
