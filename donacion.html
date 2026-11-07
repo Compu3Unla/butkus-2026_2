@@ -30,22 +30,71 @@
             <img src="img/img/logos/bk-logo-header.svg" alt="logo de Butkus" width="67" height="67">
             <div class="navegador">
                 <a href="#">conocenos</a>
-                <a href="#">recursos</a>
+                <details class="menu-desplegable">
+                    <summary>recursos</summary>
+
+                    <div class="submenu-flotante">
+
+                        <details class="sub-details">
+                            <summary>
+                                <p class="links-nav">catálogo <img src="img/img/logos/flecha-blanca-chiquita.svg"
+                                        alt="flecha-derecha-blanca" height="14px" width="12px" /></p>
+                            </summary>
+                            <div class="sub-links">
+                                <a href=#>reflex</a>
+                                <a href="#">analógica</a>
+                                <a href="#">digital</a>
+                                <a href="#">dsrl</a>
+                                <a href="#">de video</a>
+                            </div>
+                        </details>
+
+                        <details class="sub-details">
+                            <summary>
+                                <p class="links-nav">tutoriales <img src="img/img/logos/flecha-blanca-chiquita.svg"
+                                        alt="flecha-derecha-blanca" height="14px" width="12px" /></p>
+                            </summary>
+                            <div class="sub-links">
+                                <a href=#>youtube</a>
+                                <a href="#">tiktok</a>
+                                <a href="#">telegram</a>
+                            </div>
+                        </details>
+
+                        <details class="sub-details">
+                            <summary>
+                                <p class="links-nav">documentacion <img src="img/img/logos/flecha-blanca-chiquita.svg"
+                                        alt="flecha-derecha-blanca" height="14px" width="12px" /></p>
+                            </summary>
+                            <div class="sub-links">
+                                <a href=#>manuales</a>
+                                <a href="#">compatibilidad</a>
+                                <a href="#">problemas de impresión</a>
+                                <a href="#">reparación</a>
+                            </div>
+                        </details>
+                    </div>
+                </details>
                 <a href="#">contactanos</a>
             </div>
 
+
             <div>
                 <form action="/buscar" method="get" enctype="text/plain" class="contenedor-buscador">
-                    <label for="search-input" class="ocultar-nav" img src="img/img/logos/icono_lupa.svg">Buscar</label>
-                    <input type="search" id="search-input" name="q" placeholder="Buscar" required>
+                    <label for="search-input" class="ocultar-nav"></label>
+                    <img src="img/img/logos/icono_busqueda.svg" height="24" width="24"/>
+                    <input type="search" id="search-input" name="search-input" placeholder="Buscar" required>
                 </form>
             </div>
 
             <ul>
                 <li class="logos-header">
-                    <a href="#"><img src="img/img/logos/icono-home-header.svg" alt="logo casa" width="30px" height="30px"></a>
-                    <a href="#"><img src="img/img/logos/icono-usuario_header.svg" alt="logo usuario" width="30px" height="30px"></a>
-                    <a href="#"><img src="img/img/logos/icono_mensaje_header.svg" alt="logo mensaje" width="30px" height="30px"></a>
+                    <a href="index.html"><img src="img/img/logos/icono-home-header.svg" alt="logo casa" width="25px"
+                            height="25px"></a>
+                    <a href="inicio-sesion.html"><img src="img/img/logos/icono-usuario_header.svg" alt="logo usuario"
+                            width="30px" height="30px"></a>
+                    <a href="#"><img src="img/img/logos/icono_mensaje_header.svg" alt="logo mensaje" width="30px"
+                            height="30px"></a>
                 </li>
             </ul>
         </nav>
