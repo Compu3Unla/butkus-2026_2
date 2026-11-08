@@ -161,6 +161,16 @@ footer {
     color: #fcfcfc;
     width: 100%;
     font-family: "Alegreya Sans SC", sans-serif;
+    position: relative;
+    overflow: hidden;
+
+    h3 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
 }
 
 .footer-columna h3 {
@@ -181,6 +191,11 @@ footer {
     justify-content: space-between;
     gap: 30px;
     padding-bottom: 30px;
+
+    img {
+        opacity: 30%;
+        margin-top: 20px;
+    }
 }
 
 .footer-abajo {
@@ -190,6 +205,13 @@ footer {
     width: 100%;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    img {
+        opacity: 10%;
+        position: absolute;
+        right: -47px;
+        bottom: -13px;
+    }
 }
 
 .logos-footer {
