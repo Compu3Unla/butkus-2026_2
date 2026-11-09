@@ -676,4 +676,51 @@ a {
 .frecuencia_donación {
     display: flex;
     gap: 45px;
+/*aplicaciones a videoteca*/
+
+.migas {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 22px;
+}
+
+.palabra-miga {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    p.migas-de-pan {
+        font-family: Alegreya Sans SC;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem;
+        color: #CF7D1E;
+    }
+}
+
+.intro-tutorial {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.h3-y-filtro {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.texto-tutorial {
+    max-width: 600px;
 }
