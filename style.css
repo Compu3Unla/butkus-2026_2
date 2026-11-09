@@ -116,6 +116,12 @@ nav {
     margin: 0 auto;
     font-size: 18px;
     font-family: "Alegreya Sans SC", sans-serif;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 .contenedor-buscador {
@@ -583,6 +589,93 @@ a {
     background-color: #F0F9F5;
 }
 
+
+/* Aplicaciones de Donacion */
+
+.main-donacion {
+    background-image: url(img/img/1-inicio-carrusel/fondo-carrusel-1y3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #035557;
+    background-blend-mode: exclusion;
+}
+
+.contenedor-donacion {
+    display: flex;
+    gap: 90px;
+    width: 80%;
+    padding: 80px 60px;
+    max-width: 1200px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #072D2E;
+    margin: 60px;
+}
+
+.donación_columna_izq {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+
+    p {
+        .p-bold {
+            font-weight: 600;
+        }
+    }
+}
+
+.donación_columna_der {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #035557;
+    border-radius: 20px;
+    gap: 30px;
+    width: 50%;
+
+    p {
+        min-width: 360px;
+        max-width: 650px;
+    }
+
+    label {
+        color: white;
+        display: flex;
+    }
+
+    .subrayado_donación {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .btn-marco-verde {
+        border-radius: 10px;
+        padding: 10px;
+        border-color: white;
+        background-color: #035557;
+        font-family: Alegreya Sans;
+        font-size: 1rem;
+        color: white;
+        font-weight: 500;
+        font-style: normal;
+
+    }
+}
+
+.blanco_bold {
+    font-family: "Alegreya Sans", serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+}
+
+.frecuencia_donación {
+    display: flex;
+    gap: 45px;
 /*aplicaciones a videoteca*/
 
 .migas {
