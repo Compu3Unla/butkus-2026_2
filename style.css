@@ -588,8 +588,8 @@ a {
 .migas {
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 55px;
     gap: 22px;
 }
 
@@ -619,15 +619,194 @@ a {
     max-width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
+}
+
+.texto-tutorial {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .botones {
     display: flex;
     flex-direction: row;
     gap: 35px;
+
+    input {
+        font-family: Alegreya Sans SC;
+        color: #FFF;
+        text-align: center;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
 }
 
 .texto-tutorial {
     max-width: 600px;
+}
+
+.tutoriales-youtube {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    gap: 25px;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    max-width: 246px;
+    border-radius: 20px;
+    background: #F0F9F5;
+    padding: 93px 30px 0 30px;
+    gap: 65px;
+    justify-content: flex-start;
+}
+
+.filtro-superior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        label {
+            font-family: Alegreya Sans SC;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.25rem;
+            color: #035557;
+        }
+
+        input {
+            background-color: #cce5e1;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-family: Merriweather;
+            font-size: 18px;
+            color: #035557;
+        }
+    }
+}
+
+
+.lista-palabras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    button {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background-color: #cce5e1;
+        border: none;
+        border-radius: 10px;
+        padding: 5px 12px;
+        color: #035557;
+        font-family: Alegreya;
+        font-size: 1.1rem;
+        font-style: normal;
+    }
+}
+
+.filtro-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+p.versalita-verde-filtro {
+    color: #035557;
+    font-family: Alegreya Sans SC;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
+.gama {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.era {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkboxs {
+    label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Alegreya Sans;
+        font-size: 1.2rem;
+        color: #003b3b;
+    }
+
+    input {
+        width: 1rem;
+        height: 1rem;
+        accent-color: #d98216;
+        cursor: pointer;
+    }
+}
+
+.caja-filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.multimedia-youtube {
+    display: flex;
+    max-width: 750px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.videos {
+    display: flex;
+    max-width: 800px;
+    min-width: 240px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: solid #40968C;
+}
+
+hgroup {
+    p.versalita-sub-youtube {
+        font-family: "Alegreya Sans SC";
+        font-size: 1.5rem;
+        font-style: normal;
+    }
+}
+
+p.versalita-fecha {
+    color: #035557;
+    text-align: right;
+    font-family: "Alegreya Sans SC";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
 }
