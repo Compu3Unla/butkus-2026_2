@@ -1308,6 +1308,8 @@ a {
 .frecuencia_donación {
     display: flex;
     gap: 45px;
+}
+
 /*aplicaciones a videoteca*/
 
 .migas {
@@ -1516,7 +1518,7 @@ p.versalita-verde-filtro {
     justify-content: center;
     gap: 20px;
     border-radius: 10px;
-    border: solid #40968C;
+    border: solid 2px #40968C;
 }
 
 hgroup {
@@ -1534,5 +1536,4 @@ p.versalita-fecha {
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 500;
-}
 }
