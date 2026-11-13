@@ -110,37 +110,38 @@ nav {
 
 .navegador a,
 .navegador summary {
-  position: relative;
-  text-decoration: none;
-  padding-bottom: 4px;
-  cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 4px;
+    cursor: pointer;
 }
 
 .navegador a::after,
 .navegador summary::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #CF7D1E;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #CF7D1E;
 }
 
 .navegador a:hover::after,
 .navegador summary:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 
 
 .logos-header a img {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .logos-header a:hover img {
-  transform: scale(1.1);
-  filter: sepia(100%) saturate(600%) brightness(80%) hue-rotate(345deg); /* quisé ponerle este color #CF7D1E, pero no me dejo :i */
+    transform: scale(1.1);
+    filter: sepia(100%) saturate(600%) brightness(80%) hue-rotate(345deg);
+    /* quisé ponerle este color #CF7D1E, pero no me dejo :i */
 }
 
 
@@ -269,18 +270,18 @@ nav {
 }
 
 .carrusel-contenedor {
-   position: relative;
-  width: 100%;
-  max-width: 1200px;
-  height: 550px;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 550px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .slide-carrusel {
-    display: none; 
+    display: none;
     width: 100%;
     height: 100%;
     align-items: center;
@@ -290,8 +291,9 @@ nav {
     display: flex;
 }
 
-.img-carrusel { /* No estoy segura si hacerlo asi, es la mejor opción que encontré */
-  filter: drop-shadow(0px 6px 12px #CF7D1E);
+.img-carrusel {
+    /* No estoy segura si hacerlo asi, es la mejor opción que encontré */
+    filter: drop-shadow(0px 6px 12px #CF7D1E);
 }
 
 
@@ -340,7 +342,7 @@ nav {
     color: #CF7D1E;
     font-weight: 600;
     font-size: 1.8rem;
-        margin: 30px 0 40px 0;
+    margin: 30px 0 40px 0;
 }
 
 .info-carrusel h2 {
@@ -777,19 +779,174 @@ a {
 /* Aplicaciones de Usuario */
 
 
-.main-usuario {
-    background-color: #F0F9F5;
+.contenedor-usuario {
+    width: 90%;
+    max-width: 1350px;
+    margin: 50px auto;
+}
+
+.contenedor-perfil {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 10px 0 30px 0;
+}
+
+.informacion-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.informacion-usuario h3 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.usuario-estadisticas {
+    width: 100%;
+    border-top: 4px solid #40968C;
+    margin-top: 25px;
+}
+
+.barra-estadisticas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #40968C;
+    width: 65%;
+    max-width: 750px;
+    margin-left: 0;
+    padding: 18px 25px;
+    border-radius: 0 0 15px 15px;
+}
+
+.notificacion-usuario {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.versalita-blanca {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.contenedor-expandirnos {
+    justify-content: center;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
-main {
+.contenedor-tarjetas {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.contenedor-tarjetas article {
+    background-color: #dbeae6;
+    border-radius: 20px;
+    padding: 70px 40px;
+    width: 55%;
+    max-width: 580px;
     display: flex;
     flex-direction: column;
-    width: 100%;
     align-items: center;
-    background-color: #FBFBFB;
+    text-align: center;
+    color: #072D2E;
+    gap: 20px;
 }
 
+.naranja {
+    color: #CF7D1E;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.info-aporte {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #072D2E;
+    max-width: 240px;
+    gap: 10px;
+}
+
+.info-aporte h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.info-aporte .versalita {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.info-aporte button {
+    margin-top: 15px;
+    background-color: transparent;
+    color: #CF7D1E;
+    border: 1px solid #CF7D1E;
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+ .info-aporte button:hover {
+        background-color: #CF7D1E;
+        color: #ffffff;
+    }
+
+
+.seccion-final-usuario {
+    width: 100%;
+    border-top: 4px solid #072D2E;
+    margin-top: 50px;
+    padding: 60px 0;
+}
+
+.seccion-final-usuario h3 {
+    font-size: 1.3rem;
+    color: #072D2E;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.seccion-final-usuario div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.seccion-final-usuario div span {
+    font-size: 1.4rem;
+    color: #072D2E;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.seccion-final-usuario button {
+    background-color: #40968C;
+    color: #fcfcfc;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
 
 
 /* Comienza footer */
@@ -802,12 +959,9 @@ footer {
     position: relative;
     overflow: hidden;
 
-    h3 {
-        color: white;
-    }
-
+    h3,
     p {
-        color: white;
+        color: #fcfcfc;
     }
 }
 
@@ -1214,12 +1368,6 @@ a {
 }
 
 
-/* Aplicaciones de Usuario */
-
-
-.main-usuario {
-    background-color: #F0F9F5;
-}
 
 
 /* Aplicaciones de Donacion */
@@ -1308,231 +1456,232 @@ a {
 .frecuencia_donación {
     display: flex;
     gap: 45px;
-/*aplicaciones a videoteca*/
 
-.migas {
-    display: flex;
-    flex-direction: row;
-    padding-top: 60px;
-    padding-bottom: 55px;
-    gap: 22px;
-}
+    /*aplicaciones a videoteca*/
 
-.palabra-miga {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-
-    p.migas-de-pan {
-        font-family: Alegreya Sans SC;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.25rem;
-        color: #CF7D1E;
-    }
-}
-
-.intro-tutorial {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-}
-
-.h3-y-filtro {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
-.texto-tutorial {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.botones {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
-
-    input {
-        font-family: Alegreya Sans SC;
-        color: #FFF;
-        text-align: center;
-        font-size: 1.2rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.8rem;
-    }
-}
-
-.texto-tutorial {
-    max-width: 600px;
-}
-
-.tutoriales-youtube {
-    display: flex;
-    flex-direction: row;
-    padding-top: 100px;
-    gap: 25px;
-}
-
-.filtros {
-    display: flex;
-    flex-direction: column;
-    max-width: 246px;
-    border-radius: 20px;
-    background: #F0F9F5;
-    padding: 93px 30px 0 30px;
-    gap: 65px;
-    justify-content: flex-start;
-}
-
-.filtro-superior {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-
-    form {
+    .migas {
         display: flex;
-        flex-direction: column;
-        gap: 30px;
+        flex-direction: row;
+        padding-top: 60px;
+        padding-bottom: 55px;
+        gap: 22px;
+    }
 
-        label {
+    .palabra-miga {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        p.migas-de-pan {
             font-family: Alegreya Sans SC;
             font-size: 1.25rem;
             font-style: normal;
             font-weight: 700;
             line-height: 1.25rem;
-            color: #035557;
+            color: #CF7D1E;
         }
+    }
+
+    .intro-tutorial {
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .h3-y-filtro {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .texto-tutorial {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
 
         input {
+            font-family: Alegreya Sans SC;
+            color: #FFF;
+            text-align: center;
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.8rem;
+        }
+    }
+
+    .texto-tutorial {
+        max-width: 600px;
+    }
+
+    .tutoriales-youtube {
+        display: flex;
+        flex-direction: row;
+        padding-top: 100px;
+        gap: 25px;
+    }
+
+    .filtros {
+        display: flex;
+        flex-direction: column;
+        max-width: 246px;
+        border-radius: 20px;
+        background: #F0F9F5;
+        padding: 93px 30px 0 30px;
+        gap: 65px;
+        justify-content: flex-start;
+    }
+
+    .filtro-superior {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            label {
+                font-family: Alegreya Sans SC;
+                font-size: 1.25rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 1.25rem;
+                color: #035557;
+            }
+
+            input {
+                background-color: #cce5e1;
+                border: none;
+                border-radius: 10px;
+                padding: 12px 15px;
+                font-family: Merriweather;
+                font-size: 18px;
+                color: #035557;
+            }
+        }
+    }
+
+
+    .lista-palabras {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        button {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             background-color: #cce5e1;
             border: none;
             border-radius: 10px;
-            padding: 12px 15px;
-            font-family: Merriweather;
-            font-size: 18px;
+            padding: 5px 12px;
             color: #035557;
+            font-family: Alegreya;
+            font-size: 1.1rem;
+            font-style: normal;
         }
     }
-}
 
-
-.lista-palabras {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-
-    button {
+    .filtro-inferior {
         display: flex;
-        align-items: center;
-        gap: 12px;
-        background-color: #cce5e1;
-        border: none;
-        border-radius: 10px;
-        padding: 5px 12px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    p.versalita-verde-filtro {
         color: #035557;
-        font-family: Alegreya;
-        font-size: 1.1rem;
+        font-family: Alegreya Sans SC;
+        font-size: 1.25rem;
         font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem;
     }
-}
 
-.filtro-inferior {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-p.versalita-verde-filtro {
-    color: #035557;
-    font-family: Alegreya Sans SC;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.25rem;
-}
-
-.gama {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.era {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.checkboxs {
-    label {
+    .gama {
         display: flex;
-        align-items: center;
-        gap: 10px;
-        font-family: Alegreya Sans;
-        font-size: 1.2rem;
-        color: #003b3b;
+        flex-direction: column;
+        gap: 15px;
     }
 
-    input {
-        width: 1rem;
-        height: 1rem;
-        accent-color: #d98216;
-        cursor: pointer;
+    .era {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
-}
 
-.caja-filtros {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
+    .checkboxs {
+        label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: Alegreya Sans;
+            font-size: 1.2rem;
+            color: #003b3b;
+        }
 
-.multimedia-youtube {
-    display: flex;
-    max-width: 750px;
-    align-items: flex-start;
-    align-content: flex-start;
-    gap: 30px 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 60px;
-}
+        input {
+            width: 1rem;
+            height: 1rem;
+            accent-color: #d98216;
+            cursor: pointer;
+        }
+    }
 
-.videos {
-    display: flex;
-    max-width: 800px;
-    min-width: 240px;
-    padding: 40px;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    border-radius: 10px;
-    border: solid #40968C;
-}
+    .caja-filtros {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
 
-hgroup {
-    p.versalita-sub-youtube {
+    .multimedia-youtube {
+        display: flex;
+        max-width: 750px;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 30px 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .videos {
+        display: flex;
+        max-width: 800px;
+        min-width: 240px;
+        padding: 40px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        border-radius: 10px;
+        border: solid #40968C;
+    }
+
+    hgroup {
+        p.versalita-sub-youtube {
+            font-family: "Alegreya Sans SC";
+            font-size: 1.5rem;
+            font-style: normal;
+        }
+    }
+
+    p.versalita-fecha {
+        color: #035557;
+        text-align: right;
         font-family: "Alegreya Sans SC";
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-style: normal;
+        font-weight: 500;
     }
-}
-
-p.versalita-fecha {
-    color: #035557;
-    text-align: right;
-    font-family: "Alegreya Sans SC";
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 500;
-}
 }
