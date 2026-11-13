@@ -22,6 +22,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="animaciones.js"></script>
+
 </head>
 
 <body>
@@ -82,7 +84,7 @@
             <div>
                 <form action="/buscar" method="get" enctype="text/plain" class="contenedor-buscador">
                     <label for="search-input" class="ocultar-nav"></label>
-                    <img src="img/img/logos/icono_busqueda.svg" height="24" width="24"/>
+                    <img src="img/img/logos/icono_busqueda.svg" height="24" width="24" />
                     <input type="search" id="search-input" name="search-input" placeholder="Buscar" required>
                 </form>
             </div>
@@ -100,20 +102,58 @@
         </nav>
     </header>
 
+
     <main>
-        <section class="animacion-inicio-butkus">
+         <section class="animacion-inicio-butkus">
             <img src="img/img/otras-img/animacion-butkus-inicio.gif" alt="animacion-butkus-inicio" />
         </section>
         <h1>Butkus Camera Manual Library</h1>
         <section class="contenedor-carrusel-novedades">
-            <div class="imagenes-carrusel-novedades">
-                <img src="img/img/logos/carrusel-1.png" alt="carrusel-1" />
-                <img src="img/img/logos/carrusel-2.png" alt="carrusel-2" />
-                <img src="img/img/logos/carrusel-3.png" alt="carrusel-3" />
+            <div class="flechas">
+                <img src="img/img/logos/flecha_carrusel-izquierda.svg" alt="Anterior" id="btn-anterior" />
+                <img src="img/img/logos/flecha-carrusel-derecha.svg" alt="Siguiente" id="btn-siguiente" />
             </div>
 
-            <div class="botones-carrusel-novedades">
-                <!-- acá irían los botones de navegación -->
+            <div class="carrusel-contenedor">
+                <div class="slide-carrusel activo">
+                    <div class="info-carrusel">
+                        <span class="naranja-carrusel">Nuestras novedades</span>
+                        <h3>BLACKMAGIC</h3>
+                        <h2>Digital PYXIS 12K</h2>
+                        <p>Cámara de acción con sensor de alta potencia y rendimiento superior.</p>
+                    </div>
+                    <div>
+                        <img class="img-carrusel" src="img/img/1-inicio-carrusel/1_inicio_carrucel_blackmagic_digital_.png"
+                            alt="Digital PYXIS 12K"/>
+                    </div>
+                </div>
+
+
+                <div class="slide-carrusel">
+                    <div class="info-carrusel">
+                        <span class="naranja-carrusel">Nuestras novedades</span>
+                        <h3>PRECOMBO</h3>
+                        <h2>Osmo Action 5 PRO</h2>
+                        <p>Cámara cinematográfica digital con el sensor de fotograma completo más adaptable del mercado.</p>
+                    </div>
+                    <div>
+                        <img class="img-carrusel" src="img/img/1-inicio-carrusel/2-inicio-carrucel-osmo-action5pro.png"
+                            alt="Osmo Action 5 PRO"/>
+                    </div>
+                </div>
+
+                <div class="slide-carrusel">
+                    <div class="info-carrusel">
+                        <span class="naranja-carrusel">Nuestras novedades</span>
+                        <h3>4K CMOS</h3>
+                        <h2>Sony HDC 3500</h2>
+                        <p>Cámara de acción con sensor de alta potencia y rendimiento superior.</p>
+                    </div>
+                    <div class="img-carrusel">
+                        <img  src="img/img/1-inicio-carrusel/3-inicio-carrucel-4k-cmos.png"
+                            alt="Sony HDC 3500"/>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -129,15 +169,36 @@
             </div>
 
             <div class="imagenes-catalogo-index">
-                <img src="img/img//1-1-catalogo/catalogo-reflex.png" alt="catalogo-reflex" width="248" height="261" />
-                <img src="img/img//1-1-catalogo/catalogo-analogica.png" alt="catalogo-analogica" width="248"
-                    height="261" />
-                <img src="img/img//1-1-catalogo/catalogo-digital.png" alt="catalogo-digital" width="248" height="261" />
-                <img src="img/img//1-1-catalogo/catalogo-dsrl.png" alt="catalogo-dsrl" width="248" height="261" />
-                <img src="img/img//1-1-catalogo/catalogo-de-video.png" alt="catalogo-de-video" width="248"
-                    height="261" />
-            </div>
+                <div class="tarjeta-catalogo">
+                    <span class="etiqueta">REFLEX</span>
+                    <img class="catalogo-1" src="img/img/1-1-catalogo/1_inicio_secc_catalogo_reflex.jpg"
+                        alt="catalogo-reflex" />
+                </div>
 
+                <div class="tarjeta-catalogo">
+                    <span class="etiqueta">ANALÓGICA</span>
+                    <img class="catalogo-2" src="img/img/1-1-catalogo/2_inicio_secc_catalogo_analogica.jpg"
+                        alt="catalogo-analogica" />
+                </div>
+
+                <div class="tarjeta-catalogo">
+                    <span class="etiqueta">DIGITAL</span>
+                    <img class="catalogo-3" src="img/img/1-1-catalogo/3_inicio_secc_catalogo_digital.jpg"
+                        alt="catalogo-digital" />
+                </div>
+
+                <div class="tarjeta-catalogo">
+                    <span class="etiqueta">DSLR</span>
+                    <img class="catalogo-4" src="img/img/1-1-catalogo/4_inicio_secc_catalogo_dslr.jpg"
+                        alt="catalogo-dsrl" />
+                </div>
+
+                <div class="tarjeta-catalogo">
+                    <span class="etiqueta">VIDEO</span>
+                    <img class="catalogo-5" src="img/img/1-1-catalogo/5_inicio_secc_catalogo_devideo.jpg"
+                        alt="catalogo-de-video" />
+                </div>
+            </div>
         </section>
 
 
@@ -150,7 +211,6 @@
             </div>
 
             <article class="recursos">
-
                 <div class=documentacion-columna_izq>
                     <article class="boton-impresion">
                         <img src="img/img/logos/logo-pdf.svg" alt="icono-problemas-impresion" width="152"
@@ -215,45 +275,49 @@
             <img src="img/img/otras-img/gif-mike-ayudante.gif" alt="gif-mike-ayudante" width="175" height="175" />
         </section>
 
-        <section class="estadisticas">
-            <h2 class="naranja">por qué elegirnos</h2>
-            <h3>Hemos ayudados a millones de personas en todo el mundo. Ayudemonos entre todos</h3>
-            <p>Se añade material constantemente. La libreria de manuales de camaras más activas de todo el mundo</p>
-
-            <div class="contenedor-cards-estadisticas">
-
-                <article class="card-estadisticas">
-                    <div class="presentacion-tema">
-                        <img src="img/img/logos/icono-usuarios-registrados.png" alt="icono-usuarios-registrados" width="60" height="60" />
-                        <h4>Usuarios registrados</h4>
-                    </div>
-                    <h3>+15M</h3>
-                    <p>Más de 15 millones de usuarios registrados en todo el mundo buscando y compartiendo material
-                        técnico fotográfico.</p>
-                </article>
-
-                <article class="card-estadisticas">
-                    <div class="presentacion-tema"><img src="img/img/logos/icono-documentos-registrados.png"
-                            alt="icono-documentos-archivados" width="60" height="60" />
-                        <h4>Documentos archivados</h4>
-                    </div>
-                    <h3>+5M</h3>
-                    <p>Documentos con acceso libre a descargas, foros y material exclusivo.</p>
-                </article>
-
-                <article class="card-estadisticas">
-                    <div class="presentacion-tema">
-                        <img src="img/img/logos/icono-alcance-internacional.png" alt="icono-alcance-internacional"
-                            width="60" height="60" />
-                        <h4>Alcance internacional</h4>
-                    </div>
-                    <h3>+100 paises</h3>
-                    <p>Facilitamos el acceso libre a documentación y manuales de cámaras desde cualquier lugar del
-                        mundo.</p>
-                </article>
-
+        <section>
+            <div class="animacion-estadisticas" id="seccion-superior">
+                <h2 class="naranja">por qué elegirnos</h2>
+                <h3>Hemos ayudados a millones de personas en todo el mundo. Ayudemonos entre todos</h3>
+                <p>Se añade material constantemente. La libreria de manuales de camaras más activas de todo el mundo</p>
             </div>
         </section>
+
+
+        <div class="contenedor-cards-estadisticas">
+            <article class="card-estadisticas">
+                <div class="presentacion-tema">
+                    <img src="img/img/logos/icono-usuarios-registrados.png" alt="icono-usuarios-registrados" width="60"
+                        height="60" />
+                    <h4>Usuarios registrados</h4>
+                </div>
+                <h3>+15M</h3>
+                <p>Más de 15 millones de usuarios registrados en todo el mundo buscando y compartiendo material
+                    técnico fotográfico.</p>
+            </article>
+
+            <article class="card-estadisticas">
+                <div class="presentacion-tema"><img src="img/img/logos/icono-documentos-registrados.png"
+                        alt="icono-documentos-archivados" width="60" height="60" />
+                    <h4>Documentos archivados</h4>
+                </div>
+                <h3>+5M</h3>
+                <p>Documentos con acceso libre a descargas, foros y material exclusivo.</p>
+            </article>
+
+            <article class="card-estadisticas">
+                <div class="presentacion-tema">
+                    <img src="img/img/logos/icono-alcance-internacional.png" alt="icono-alcance-internacional"
+                        width="60" height="60" />
+                    <h4>Alcance internacional</h4>
+                </div>
+                <h3>+100 paises</h3>
+                <p>Facilitamos el acceso libre a documentación y manuales de cámaras desde cualquier lugar del
+                    mundo.</p>
+            </article>
+
+        </div>
+
 
         <section class="atencion">
             <h3 class="blanco">Cuidado con las descargas falsas</h3>
@@ -282,17 +346,21 @@
     </main>
 
 
-        <footer>
+    <footer>
         <div class="footer-contenedor">
             <div class="footer-arriba">
                 <div class="footer-columna">
                     <p>mike@butkus.org</p>
                     <ul class="logos-footer">
-                        <li><a href="#"><img src="img/img/logos/logo-twitter.svg" alt="logo twitter" width="30" height="30"></a></li>
-                        <li><a href="#"><img src="img/img/logos/logo-instagram.svg" alt="logo instagram" width="30" height="30"></a>
+                        <li><a href="#"><img src="img/img/logos/logo-twitter.svg" alt="logo twitter" width="30"
+                                    height="30"></a></li>
+                        <li><a href="#"><img src="img/img/logos/logo-instagram.svg" alt="logo instagram" width="30"
+                                    height="30"></a>
                         </li>
-                        <li><a href="#"><img src="img/img/logos/logo-youtube.svg" alt="logo youtube" width="30" height="30"></a></li>
-                        <li><a href="#"><img src="img/img/logos/logo-linkedin.svg" alt="logo linkedin" width="30" height="30"></a></li>
+                        <li><a href="#"><img src="img/img/logos/logo-youtube.svg" alt="logo youtube" width="30"
+                                    height="30"></a></li>
+                        <li><a href="#"><img src="img/img/logos/logo-linkedin.svg" alt="logo linkedin" width="30"
+                                    height="30"></a></li>
                     </ul>
                 </div>
 
@@ -335,7 +403,7 @@
                 <img src="img/img/logos/mike-footer.svg" alt="logo Butkus">
             </div>
         </div>
-</footer>
+    </footer>
 
 </body>
 

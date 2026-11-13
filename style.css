@@ -7,6 +7,7 @@
     margin: 0;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
@@ -84,22 +85,6 @@ p {
     color: #072D2E;
 }
 
-.boton-formularios {
-    font-family: "Alegreya Sans";
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    color: #035557;
-    text-align: center;
-    border-color: #035557;
-    border-radius: 10px;
-    border-style: solid;
-    padding: 5px;
-    border-width: 1px;
-
-}
-
 header {
     background-color: #072D2E;
 }
@@ -148,13 +133,625 @@ nav {
 }
 
 
+/* Aplicaciones de Index */
+
+.catalogo-carrusel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .nav {
+        font-family: Alegreya Sans SC;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.25rem;
+        color: #CF7D1E;
+    }
+
+    .info-catalogo-index {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 30px 0;
+
+        .lpm {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .imagenes-catalogo-index {
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+
+        .tarjeta-catalogo img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .etiqueta {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #035557;
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: bold;
+            font-family: sans-serif;
+            padding: 6px 12px;
+            border-top-left-radius: 7px;
+            border-bottom-right-radius: 8px;
+            z-index: 2;
+        }
+
+        .tarjeta-catalogo {
+            position: relative;
+            width: 240px;
+            height: 240px;
+            border: 0.2px solid #035557;
+            border-radius: 8px;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .tarjeta-catalogo:hover img {
+            transform: scale(1.15);
+        }
+    }
+}
+
+
+/* Index- CARRUSEL */
+
+.contenedor-carrusel-novedades {
+    position: relative;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 130px 60px;
+    background-color: #065559;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    transition: background-image 0.4s ease;
+}
+
+.carrusel-contenedor {
+   position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 550px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide-carrusel {
+    display: none; 
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.slide-carrusel.activo {
+    display: flex;
+}
+
+.img-carrusel { /* No estoy segura si hacerlo asi, es la mejor opción que encontré */
+  filter: drop-shadow(0px 6px 12px #CF7D1E);
+}
+
+
+.flechas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#btn-anterior {
+    position: absolute;
+    top: 50%;
+    left: 250px;
+    transform: translateY(-50%);
+    width: 45px;
+    cursor: pointer;
+}
+
+#btn-siguiente {
+    position: absolute;
+    top: 50%;
+    right: 250px;
+    transform: translateY(-50%);
+    width: 45px;
+    cursor: pointer;
+}
+
+.naranja-carrusel {
+    font-family: "Merriweather";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    color: #CF7D1E;
+}
+
+.info-carrusel p {
+    color: #cccccc;
+    font-family: 'Alegreya Sans';
+    font-size: 1.5rem;
+}
+
+.info-carrusel h3 {
+    color: #CF7D1E;
+    font-weight: 600;
+    font-size: 1.8rem;
+        margin: 30px 0 40px 0;
+}
+
+.info-carrusel h2 {
+    font-family: "Merriweather";
+    color: #cccccc;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+/* Index- DOCUMENTACION */
+
+.documentacion-index {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    max-width: 70%;
+
+    .info-documentacion-index {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 0 30px 0;
+    }
+
+    .recursos {
+        display: flex;
+        gap: 30px;
+
+        .documentacion-columna_izq {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 50%;
+
+            article {
+                border-radius: 25px;
+                border-color: #035557;
+                border-style: solid;
+                border-width: 2px;
+                padding: 35px;
+                display: flex;
+                gap: 20px;
+                flex-grow: 1;
+
+                .info-btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+
+                img {
+                    margin: 20px;
+                }
+            }
+        }
+
+        .documentacion-columna_der {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 50%;
+
+            article {
+                border-radius: 25px;
+                border-color: #035557;
+                border-style: solid;
+                border-width: 2px;
+                padding: 35px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                flex-grow: 1;
+
+                img {
+                    margin: 20px;
+                }
+
+                .botones-formularios {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+
+                .boton-formularios {
+                    font-family: "Alegreya Sans";
+                    font-size: 1.4rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    color: #035557;
+                    text-align: center;
+                    border-color: #035557;
+                    border-radius: 10px;
+                    border-style: solid;
+                    padding: 5px;
+                    border-width: 1px;
+                }
+
+                .boton-formularios:hover {
+                    background-color: #CF7D1E;
+                    border: none;
+                    color: #FFFFFF;
+                }
+
+                .info-btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+.boton-impresion:hover,
+.boton-reparacion:hover,
+.boton-manuales:hover,
+.boton-compatibilidad:hover,
+.boton-antiguas:hover {
+    background-color: #40968C4d;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+.btn-siguiente {
+    background-color: #CF7D1E;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.btn-siguiente:hover {
+    background-color: #FFFFFF;
+    color: #CF7D1E;
+    border-color: #CF7D1E;
+}
+
+
+
+.ayuda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+}
+
+
+.animacion-estadisticas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+
+    h3 {
+        max-width: 55%;
+        text-align: center;
+    }
+
+    p {
+        max-width: 55%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+.contenedor-cards-estadisticas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+
+    .presentacion-tema {
+        display: flex;
+        gap: 20px;
+        max-width: 50%;
+    }
+
+    h3 {
+        color: #CF7D1E;
+        text-align: left;
+    }
+
+    .card-estadisticas {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 220px;
+        margin: 40px 0 70px 0;
+        background-color: #FFFFFF;
+        padding: 40px;
+        border-radius: 25px;
+
+        p {
+            text-align: left;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.contenedor-cards-estadisticas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card-estadisticas {
+    opacity: 0;
+    transform: translateX(-90px);
+}
+
+.animacion-estadisticas {
+    opacity: 0;
+    transform: translateY(-90px);
+    transition: opacity 2s ease-out, transform 1.8s ease-out;
+}
+
+.card-estadisticas:nth-child(1) {
+    opacity: 0;
+    transform: translateX(-90px);
+    transition: opacity 1.8s ease-out, transform 1.8s ease-out;
+}
+
+.card-estadisticas:nth-child(2) {
+    opacity: 0;
+    transform: translateY(90px);
+    transition: opacity 1.8s ease-out, transform 1.8s ease-out;
+}
+
+.card-estadisticas:nth-child(3) {
+    opacity: 0;
+    transform: translateX(90px);
+    transition: opacity 1.8s ease-out, transform 1.8s ease-out;
+}
+
+.animacion-estadisticas.visible,
+.card-estadisticas.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+
+
+
+.atencion {
+    background-color: #B12019;
+    border-radius: 30px;
+    padding: 40px 0 40px 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .nav {
+        font-family: Alegreya Sans SC;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+        color: white;
+    }
+}
+
+.donacion {
+    padding: 40px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-marco-naranja {
+        margin: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        border-color: #CF7D1E;
+        background-color: white;
+        font-family: Alegreya Sans;
+        font-size: 1rem;
+        color: #CF7D1E;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .btn-marco-naranja:hover {
+        background-color: #CF7D1E;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+}
+
+.frase-donacion {
+    font-family: Alegreya Sans, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: center;
+    font-style: normal;
+    color: #072D2E;
+
+    .italic {
+        font-style: italic;
+    }
+}
+
+.newsletter {
+    background-color: #035557;
+    padding: 40px 0 40px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .nav {
+        font-family: Alegreya Sans SC;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+        color: white;
+    }
+
+    form {
+        display: flex;
+        gap: 10px;
+
+        #email {
+            height: 30px;
+            width: 180px;
+            font-family: Alegreya Sans;
+            font-size: 1rem;
+            color: #072D2E;
+            font-weight: 400;
+            padding: 0 10px 0 10px;
+        }
+
+        .boton-newsletter {
+            background-color: #CF7D1E;
+            font-family: Alegreya Sans;
+            font-size: 1rem;
+            color: white;
+            font-weight: 500;
+            font-style: normal;
+            border-radius: 10px;
+            padding: 0 10px 0 10px;
+        }
+    }
+}
+
+
+
+
+
+/* Aplicaciones de Inicio Sesion */
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #9e9e9e;
+}
+
+.contenedor-inicio {
+    display: flex;
+    gap: 90px;
+    padding: 80px 60px;
+    max-width: 900px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: #072D2E;
+}
+
+.contenedor-card-inicio {
+    max-width: 300px;
+}
+
+
+
+.campo-rellenar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.campo-rellenar form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-rellenar p,
+a {
+    color: #CF7D1E;
+
+}
+
+.formulario-correo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+
+.versalita {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 600;
+}
+
+
+/* Aplicaciones de Usuario */
+
+
+.main-usuario {
+    background-color: #F0F9F5;
+}
+
+
 main {
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    background-color: #FBFBFB;
 }
 
+
+
+/* Comienza footer */
 
 footer {
     background-color: #072D2E;
@@ -231,354 +828,4 @@ footer {
 .footer-columna a {
     color: #cccccc;
     font-size: 14px;
-}
-
-
-/* Aplicaciones de Index */
-
-.catalogo-carrusel {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    .nav {
-        font-family: Alegreya Sans SC;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.25rem;
-        color: #CF7D1E;
-    }
-
-    .info-catalogo-index {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 0 30px 0;
-
-        .lpm {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    .imagenes-catalogo-index {
-        margin: 0 auto;
-        display: flex;
-        gap: 30px;
-    }
-}
-
-.documentacion-index {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    max-width: 70%;
-
-    .info-documentacion-index {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 30px 0 30px 0;
-    }
-
-    .recursos {
-        display: flex;
-        gap: 30px;
-
-        .documentacion-columna_izq {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            width: 50%;
-
-            article {
-                border-radius: 25px;
-                border-color: #035557;
-                border-style: solid;
-                border-width: 2px;
-                padding: 35px;
-                display: flex;
-                gap: 20px;
-                flex-grow: 1;
-
-                .info-btn {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                }
-
-                img {
-                    margin: 20px;
-                }
-            }
-        }
-
-        .documentacion-columna_der {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            width: 50%;
-
-            article {
-                border-radius: 25px;
-                border-color: #035557;
-                border-style: solid;
-                border-width: 2px;
-                padding: 35px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-                flex-grow: 1;
-
-                img {
-                    margin: 20px;
-                }
-
-                .botones-formularios {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 10px;
-                }
-
-                .info-btn {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    gap: 10px;
-                }
-            }
-        }
-    }
-}
-
-.ayuda {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 40px;
-}
-
-
-.estadisticas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0 40px 0;
-
-    h3 {
-        max-width: 55%;
-        text-align: center;
-    }
-
-    p {
-        max-width: 55%;
-        text-align: center;
-    }
-}
-
-.contenedor-cards-estadisticas {
-    display: flex;
-    margin: 20px;
-    width: 100%;
-    justify-content: space-around;
-
-    .presentacion-tema {
-        display: flex;
-        gap: 20px;
-        max-width: 50%;
-    }
-
-    h3 {
-        color: #CF7D1E;
-        text-align: left;
-    }
-
-    .card-estadisticas {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        max-width: 350px;
-        margin-top: 30px;
-
-        p {
-            text-align: left;
-            font-size: 1.1rem;
-        }
-    }
-}
-
-
-.atencion {
-    background-color: #B12019;
-    border-radius: 30px;
-    padding: 40px 0 40px 0;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-
-    .nav {
-        font-family: Alegreya Sans SC;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.25rem;
-        color: white;
-    }
-}
-
-.donacion {
-    padding: 40px 0 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .btn-marco-naranja {
-        margin: 20px;
-        border-radius: 10px;
-        padding: 10px;
-        border-color: #CF7D1E;
-        background-color: white;
-        font-family: Alegreya Sans;
-        font-size: 1rem;
-        color: #CF7D1E;
-        font-weight: 500;
-        font-style: normal;
-    }
-}
-
-.frase-donacion {
-    font-family: Alegreya Sans, sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 2.5rem;
-    text-align: center;
-    font-style: normal;
-    color: #072D2E;
-
-    .italic {
-        font-style: italic;
-    }
-}
-
-.newsletter {
-    background-color: #035557;
-    padding: 40px 0 40px 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-
-    .nav {
-        font-family: Alegreya Sans SC;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.25rem;
-        color: white;
-    }
-
-    form {
-        display: flex;
-        gap: 10px;
-
-        #email {
-            height: 30px;
-            width: 180px;
-            font-family: Alegreya Sans;
-            font-size: 1rem;
-            color: #072D2E;
-            font-weight: 400;
-            padding: 0 10px 0 10px;
-        }
-
-        .boton-newsletter {
-            background-color: #CF7D1E;
-            font-family: Alegreya Sans;
-            font-size: 1rem;
-            color: white;
-            font-weight: 500;
-            font-style: normal;
-            border-radius: 10px;
-            padding: 0 10px 0 10px;
-        }
-    }
-}
-
-/* Aplicaciones de Inicio Sesion */
-
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background-color: #9e9e9e;
-}
-
-.contenedor-inicio {
-    display: flex;
-    gap: 90px;
-    padding: 80px 60px;
-    max-width: 900px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    color: #072D2E;
-}
-
-.contenedor-card-inicio {
-    max-width: 300px;
-}
-
-
-
-.campo-rellenar {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.campo-rellenar form {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.campo-rellenar p,
-a {
-    color: #CF7D1E;
-
-}
-
-.formulario-correo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 40px;
-}
-
-.btn-siguiente {
-    background-color: #CF7D1E;
-    padding: 5px 10px;
-    border-radius: 7px;
-    color: #FFFFFF;
-}
-
-.versalita {
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-weight: 600;
-}
-
-
-/* Aplicaciones de Usuario */
-
-
-.main-usuario {
-    background-color: #F0F9F5;
 }
