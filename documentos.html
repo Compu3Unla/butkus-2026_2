@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Butkus</title>
+    <title>Butkus | Documentos</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,7 +55,7 @@
                                         alt="flecha-derecha-blanca" height="14px" width="12px" /></p>
                             </summary>
                             <div class="sub-links">
-                                <a href=#>youtube</a>
+                                <a href="videoteca.html">youtube</a>
                                 <a href="#">tiktok</a>
                                 <a href="#">telegram</a>
                             </div>
@@ -67,7 +67,7 @@
                                         alt="flecha-derecha-blanca" height="14px" width="12px" /></p>
                             </summary>
                             <div class="sub-links">
-                                <a href=#>manuales</a>
+                                <a href="documentos.html">manuales</a>
                                 <a href="#">compatibilidad</a>
                                 <a href="#">problemas de impresión</a>
                                 <a href="#">reparación</a>
@@ -92,34 +92,60 @@
                     <a href="index.html"><img src="img/img/logos/icono-home-header.svg" alt="logo casa" width="25px"
                             height="25px"></a>
                     <a href="inicio-sesion.html"><img src="img/img/logos/icono-usuario_header.svg" alt="logo usuario"
-                            width="30px" height="30px"></a>
-                    <a href="#"><img src="img/img/logos/icono_mensaje_header.svg" alt="logo mensaje" width="30px"
-                            height="30px"></a>
+                            width="35px" height="35px"></a>
+                    <a href="#"><img src="img/img/logos/icono_mensaje_header.svg" alt="logo mensaje" width="35px"
+                            height="35px"></a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="contenedor-documento">
-            <div class="columna-izq-documento">
-                <div>
-                    <nav aria-label="Breadcrumb" class="miga-de-pan">
-                        <ul>
-                            <li><a href="#">RECURSOS > </a></li>
-                            <li><a href="#">DOCUMENTACIÓN > </a></li>
-                            <li><a href="#">MANUALES USUARIO ></a></li>
-                            <li><a href="#">DSRL > </a></li>
-                            <li><a href="#">CANON > </a></li>
-                            <li><a>CANON EOS REBEL > </a></li>
-                        </ul>
-                    </nav>
+    <main class="documentos">
+
+        <section class="introducción-videoteca">
+            <div class="migas">
+                <div class="palabra-miga">
+                    <p class="migas-de-pan">recursos</p>
+                    <img src="img/img/logos/flecha-naranja-chiquita.svg" alt="flecha" width="12px" height="12px">
+                </div>
+                <div class="palabra-miga">
+                    <p class="migas-de-pan">documentación</p>
+                    <img src="img/img/logos/flecha-naranja-chiquita.svg" alt="flecha" width="12px" height="12px">
+                </div>
+                <div class="palabra-miga">
+                    <p class="migas-de-pan">manuales usuario</p>
+                    <img src="img/img/logos/flecha-naranja-chiquita.svg" alt="flecha" width="12px" height="12px">
+                </div>
+                <div class="palabra-miga">
+                    <p class="migas-de-pan">dsrl</p>
+                    <img src="img/img/logos/flecha-naranja-chiquita.svg" alt="flecha" width="12px" height="12px">
+                </div>
+                <div class="palabra-miga">
+                    <p class="migas-de-pan">canon</p>
+                    <img src="img/img/logos/flecha-naranja-chiquita.svg" alt="flecha" width="12px" height="12px">
+                </div>
+                <div class="palabra-miga">
+                    <p class="migas-de-pan">canon eos rebel</p>
+                </div>
+            </div>
+            <div class="intro-tutorial">
+                <div class="h3-y-filtro">
                     <h3>Canon EOS Rebel</h3>
-                    <div>
-                        <span class="etiqueta">CANON</span>
-                        <span class="etiqueta">DSLR</span>
+                    <div class="botones">
+                        <input type="submit" value="CANON" class="btn-otro">
+                        <input type="submit" value="DSRL" class="btn-otro">
                     </div>
                 </div>
+                <div class="texto-tutorial">
+                    <p>A continuación encontrarás disponible para su descarga la ficha técnica y el manual de usuario oficial de tu cámara.</p>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contenedor-documento">
+
+            <div class="columna-izq-documento">
 
                 <div>
                     <h4 class="versalita">ficha técnica</h4>
@@ -136,7 +162,9 @@
                         <span class="versalita">sensibilidad iso:</span> de iso 25 a iso 5000, configurada
                         automáticamente solo mediante código dx (no ajustable de forma manual).
                     </p>
-                    <button type="button">ver más ></button>
+                    <div>
+                        <input type="submit" value="Ver más..." class="btn-siguiente"> 
+                    </div>
                 </div>
 
                 <div>
@@ -157,7 +185,8 @@
             </div>
 
             <article class="columna-der-documento">
-                <img src="img/camara.jpg" alt="Canon EOS Rebel">
+                <img src="img/img/otras-img/1_documentos_canon_eos_rebel.png" alt="Canon EOS Rebel" height="401"
+                    width="449">
                 <ul>
                     <li>1. Ficha técnica</li>
                     <li>2. Descripción</li>

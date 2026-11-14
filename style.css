@@ -38,12 +38,22 @@ h2 {
 }
 
 .naranja {
-    font-family: Alegreya Sans SC;
+    font-family: Alegreya Sans SC, sans-serif;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 500;
     color: #CF7D1E;
     line-height: 2.5rem;
+}
+
+.naranja-2 {
+    font-family: Alegreya Sans, sans-serif;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 500;
+    color: #CF7D1E;
+    line-height: 2.5rem;
+    cursor: pointer;
 }
 
 h3 {
@@ -98,7 +108,7 @@ nav {
     padding: 25px 70px;
     max-width: 1400px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Alegreya Sans SC", sans-serif;
 
     li {
@@ -106,6 +116,12 @@ nav {
         align-items: center;
         gap: 10px;
     }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navegador a,
@@ -132,7 +148,48 @@ nav {
     width: 100%;
 }
 
+.menu-desplegable {
+    position: relative;
 
+    summary {
+        font-family: Alegreya Sans SC, sans-serif;
+    }
+}
+
+.submenu-flotante {
+    position: absolute;
+    width: 200px;
+    top: 100%;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #072D2E;
+    padding: 12px 0 30px 40px;
+    min-width: 160px;
+    text-align: left;
+}
+
+.sub-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.links-nav {
+    color: white;
+    font-family: Alegreya Sans SC, sans-serif;
+    font-size: 1.1rem;
+}
 
 .logos-header a img {
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -141,9 +198,7 @@ nav {
 .logos-header a:hover img {
     transform: scale(1.1);
     filter: sepia(100%) saturate(600%) brightness(80%) hue-rotate(345deg);
-    /* quisé ponerle este color #CF7D1E, pero no me dejo :i */
 }
-
 
 
 .contenedor-buscador {
@@ -176,8 +231,86 @@ nav {
     font-family: "Alegreya Sans SC", sans-serif;
 }
 
+/* Aplicaciones de Página Documentos */
+
+.documentos {
+    .introducción-videoteca {
+        max-width: 1200px;
+
+    }
+}
+
+.btn-siguiente {
+    display: flex;
+    margin-left: auto;
+    width: fit-content;
+
+}
+
+
+.contenedor-documento {
+    display: flex;
+    gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 0 80px;
+    max-width: 1200px;
+}
+
+.columna-izq-documento {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 40px;
+    max-width: 60%;
+}
+
+.columna-der-documento {
+    flex: 1;
+    border-left: 2px solid #CE7D1E;
+    padding-left: 25px;
+    position: sticky;
+    top: 20px;
+    max-width: 40%;
+}
+
+.miga-de-pan {
+    padding: 5px 0px 40px 0px;
+}
+
+.miga-de-pan ul {
+    list-style: none;
+    display: flex;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px;
+    color: #CE7D1E;
+    gap: 10px;
+}
+
+.etiqueta {
+    background-color: #CE7D1E;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
 
 /* Aplicaciones de Index */
+
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .catalogo-carrusel {
     display: flex;
@@ -185,7 +318,7 @@ nav {
     gap: 10px;
 
     .nav {
-        font-family: Alegreya Sans SC;
+        font-family: Alegreya Sans SC, sans-serif;
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 700;
@@ -334,7 +467,7 @@ nav {
 
 .info-carrusel p {
     color: #cccccc;
-    font-family: 'Alegreya Sans';
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.5rem;
 }
 
@@ -353,6 +486,72 @@ nav {
     margin-bottom: 8px;
 }
 
+/* Página Inicio Sesión */
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #9e9e9e;
+}
+
+.contenedor-inicio {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 880px;
+    padding: 75px 80px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.contenedor-card-inicio {
+    flex: 1;
+}
+
+.contenedor-card-inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #072D2E;
+    max-width: 250px;
+    margin-top: 15px;
+}
+
+.campo-rellenar {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.campo-rellenar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-rellenar input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #0E0E36;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #072D2E;
+}
+
+.campo-rellenar>div>p {
+    font-size: 18px;
+    color: #CF7D1E;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.formulario-correo a {
+    font-size: 18px;
+}
 
 
 /* Index- DOCUMENTACION */
@@ -432,7 +631,7 @@ nav {
                 }
 
                 .boton-formularios {
-                    font-family: "Alegreya Sans";
+                    font-family: "Alegreya Sans", sans-serif;
                     font-size: 1.4rem;
                     font-style: normal;
                     font-weight: 500;
@@ -480,6 +679,7 @@ nav {
     color: #FFFFFF;
     border-radius: 8px;
     font-weight: 500;
+    padding: 8px 12px;
 }
 
 .btn-siguiente:hover {
@@ -618,7 +818,7 @@ nav {
     align-items: center;
 
     .nav {
-        font-family: Alegreya Sans SC;
+        font-family: Alegreya Sans SC, sans-serif;
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 500;
@@ -639,7 +839,7 @@ nav {
         padding: 10px;
         border-color: #CF7D1E;
         background-color: white;
-        font-family: Alegreya Sans;
+        font-family: Alegreya Sans, sans-serif;
         font-size: 1rem;
         color: #CF7D1E;
         font-weight: 500;
@@ -677,7 +877,7 @@ nav {
 
 
     .nav {
-        font-family: Alegreya Sans SC;
+        font-family: Alegreya Sans SC, sans-serif;
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 500;
@@ -692,7 +892,7 @@ nav {
         #email {
             height: 30px;
             width: 180px;
-            font-family: Alegreya Sans;
+            font-family: Alegreya Sans, sans-serif;
             font-size: 1rem;
             color: #072D2E;
             font-weight: 400;
@@ -701,7 +901,7 @@ nav {
 
         .boton-newsletter {
             background-color: #CF7D1E;
-            font-family: Alegreya Sans;
+            font-family: Alegreya Sans, sans-serif;
             font-size: 1rem;
             color: white;
             font-weight: 500;
@@ -904,10 +1104,10 @@ a {
     cursor: pointer;
 }
 
- .info-aporte button:hover {
-        background-color: #CF7D1E;
-        color: #ffffff;
-    }
+.info-aporte button:hover {
+    background-color: #CF7D1E;
+    color: #ffffff;
+}
 
 
 .seccion-final-usuario {
@@ -1034,7 +1234,7 @@ footer {
     gap: 10px;
 
     .nav {
-        font-family: Alegreya Sans SC;
+        font-family: Alegreya Sans SC, sans-serif;
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 700;
@@ -1215,7 +1415,7 @@ footer {
     align-items: center;
 
     .nav {
-        font-family: Alegreya Sans SC;
+        font-family: Alegreya Sans SC, sans-serif;
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 500;
@@ -1236,7 +1436,7 @@ footer {
         padding: 10px;
         border-color: #CF7D1E;
         background-color: white;
-        font-family: Alegreya Sans;
+        font-family: Alegreya Sans, sans-serif;
         font-size: 1rem;
         color: #CF7D1E;
         font-weight: 500;
@@ -1268,7 +1468,7 @@ footer {
 
 
     .nav {
-        font-family: Alegreya Sans SC;
+        font-family: Alegreya Sans SC, sans-serif;
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 500;
@@ -1283,7 +1483,7 @@ footer {
         #email {
             height: 30px;
             width: 180px;
-            font-family: Alegreya Sans;
+            font-family: Alegreya Sans, sans-serif;
             font-size: 1rem;
             color: #072D2E;
             font-weight: 400;
@@ -1292,7 +1492,7 @@ footer {
 
         .boton-newsletter {
             background-color: #CF7D1E;
-            font-family: Alegreya Sans;
+            font-family: Alegreya Sans, sans-serif;
             font-size: 1rem;
             color: white;
             font-weight: 500;
@@ -1355,11 +1555,12 @@ a {
     margin-top: 40px;
 }
 
-.btn-siguiente {
+.btn-otro {
     background-color: #CF7D1E;
     padding: 5px 10px;
     border-radius: 7px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 .versalita {
@@ -1435,7 +1636,7 @@ a {
         padding: 10px;
         border-color: white;
         background-color: #035557;
-        font-family: Alegreya Sans;
+        font-family: Alegreya Sans, sans-serif;
         font-size: 1rem;
         color: white;
         font-weight: 500;
@@ -1445,7 +1646,7 @@ a {
 }
 
 .blanco_bold {
-    font-family: "Alegreya Sans", serif;
+    font-family: "Alegreya Sans", sans-serif;
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 600;
@@ -1458,6 +1659,8 @@ a {
     gap: 45px;
 }
 
+
+
 /*aplicaciones a videoteca*/
 
 .migas {
@@ -1468,224 +1671,215 @@ a {
     gap: 22px;
 }
 
-    /*aplicaciones a videoteca*/
+.palabra-miga {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 
-    .migas {
-        display: flex;
-        flex-direction: row;
-        padding-top: 60px;
-        padding-bottom: 55px;
-        gap: 22px;
-    }
-
-    .palabra-miga {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-
-        p.migas-de-pan {
-            font-family: Alegreya Sans SC;
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.25rem;
-            color: #CF7D1E;
-        }
-    }
-
-    .intro-tutorial {
-        display: flex;
-        flex-direction: row;
-        gap: 60px;
-    }
-
-    .h3-y-filtro {
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .texto-tutorial {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .botones {
-        display: flex;
-        flex-direction: row;
-        gap: 35px;
-
-        input {
-            font-family: Alegreya Sans SC;
-            color: #FFF;
-            text-align: center;
-            font-size: 1.2rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 1.8rem;
-        }
-    }
-
-    .texto-tutorial {
-        max-width: 600px;
-    }
-
-    .tutoriales-youtube {
-        display: flex;
-        flex-direction: row;
-        padding-top: 100px;
-        gap: 25px;
-    }
-
-    .filtros {
-        display: flex;
-        flex-direction: column;
-        max-width: 246px;
-        border-radius: 20px;
-        background: #F0F9F5;
-        padding: 93px 30px 0 30px;
-        gap: 65px;
-        justify-content: flex-start;
-    }
-
-    .filtro-superior {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-
-            label {
-                font-family: Alegreya Sans SC;
-                font-size: 1.25rem;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 1.25rem;
-                color: #035557;
-            }
-
-            input {
-                background-color: #cce5e1;
-                border: none;
-                border-radius: 10px;
-                padding: 12px 15px;
-                font-family: Merriweather;
-                font-size: 18px;
-                color: #035557;
-            }
-        }
-    }
-
-
-    .lista-palabras {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-
-        button {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            background-color: #cce5e1;
-            border: none;
-            border-radius: 10px;
-            padding: 5px 12px;
-            color: #035557;
-            font-family: Alegreya;
-            font-size: 1.1rem;
-            font-style: normal;
-        }
-    }
-
-    .filtro-inferior {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-    }
-
-    p.versalita-verde-filtro {
-        color: #035557;
-        font-family: Alegreya Sans SC;
+    p.migas-de-pan {
+        font-family: Alegreya Sans SC, sans-serif;
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 700;
         line-height: 1.25rem;
+        color: #CF7D1E;
     }
+}
 
-    .gama {
+.intro-tutorial {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.h3-y-filtro {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.texto-tutorial {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+
+    input {
+        font-family: Alegreya Sans SC, sans-serif;
+        color: #FFF;
+        text-align: center;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+}
+
+.texto-tutorial {
+    max-width: 600px;
+}
+
+.tutoriales-youtube {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    gap: 25px;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    max-width: 246px;
+    border-radius: 20px;
+    background: #F0F9F5;
+    padding: 93px 30px 0 30px;
+    gap: 65px;
+    justify-content: flex-start;
+}
+
+.filtro-superior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    form {
         display: flex;
         flex-direction: column;
-        gap: 15px;
-    }
+        gap: 30px;
 
-    .era {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .checkboxs {
         label {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-family: Alegreya Sans;
-            font-size: 1.2rem;
-            color: #003b3b;
+            font-family: Alegreya Sans SC, sans-serif;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.25rem;
+            color: #035557;
         }
 
         input {
-            width: 1rem;
-            height: 1rem;
-            accent-color: #d98216;
-            cursor: pointer;
+            background-color: #cce5e1;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-family: Merriweather;
+            font-size: 18px;
+            color: #035557;
         }
     }
+}
 
-    .caja-filtros {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
 
-    .multimedia-youtube {
-        display: flex;
-        max-width: 750px;
-        align-items: flex-start;
-        align-content: flex-start;
-        gap: 30px 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 60px;
-    }
+.lista-palabras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 
-    .videos {
+    button {
         display: flex;
-        max-width: 800px;
-        min-width: 240px;
-        padding: 40px;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
+        align-items: center;
+        gap: 12px;
+        background-color: #cce5e1;
+        border: none;
         border-radius: 10px;
-        border: solid #40968C;
+        padding: 5px 12px;
+        color: #035557;
+        font-family: Alegreya;
+        font-size: 1.1rem;
+        font-style: normal;
+    }
+}
+
+.filtro-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+p.versalita-verde-filtro {
+    color: #035557;
+    font-family: Alegreya Sans SC, sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
+.gama {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.era {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkboxs {
+    label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Alegreya Sans, sans-serif;
+        font-size: 1.2rem;
+        color: #003b3b;
     }
 
-    hgroup {
-        p.versalita-sub-youtube {
-            font-family: "Alegreya Sans SC";
-            font-size: 1.5rem;
-            font-style: normal;
-        }
+    input {
+        width: 1rem;
+        height: 1rem;
+        accent-color: #d98216;
+        cursor: pointer;
     }
+}
+
+.caja-filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.multimedia-youtube {
+    display: flex;
+    max-width: 750px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.videos {
+    display: flex;
+    max-width: 800px;
+    min-width: 240px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: solid #40968C;
+}
+
+hgroup {
+    p.versalita-sub-youtube {
+        font-family: "Alegreya Sans SC", sans-serif;
+        font-size: 1.5rem;
+        font-style: normal;
+    }
+}
+
 .videos {
     display: flex;
     max-width: 800px;
@@ -1698,20 +1892,19 @@ a {
     border: solid 2px #40968C;
 }
 
-    p.versalita-fecha {
-        color: #035557;
-        text-align: right;
-        font-family: "Alegreya Sans SC";
-        font-size: 1.3rem;
-        font-style: normal;
-        font-weight: 500;
-    }
+p.versalita-fecha {
+    color: #035557;
+    text-align: right;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
 }
 
 p.versalita-fecha {
     color: #035557;
     text-align: right;
-    font-family: "Alegreya Sans SC";
+    font-family: "Alegreya Sans SC", sans-serif;
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 500;
