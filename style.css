@@ -292,7 +292,6 @@ nav {
 }
 
 .img-carrusel {
-    /* No estoy segura si hacerlo asi, es la mejor opción que encontré */
     filter: drop-shadow(0px 6px 12px #CF7D1E);
 }
 
@@ -713,8 +712,46 @@ nav {
 }
 
 
+/* Aplicaciones de Inicio Sesion Password */
 
+.perfil-password {
+    background-color: #9e9e9e;
+    background-image: url(img/img/otras-img/fondo-inicio-sesion.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 
+.contenedor-usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 90px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.contenedor-card-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.gmail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    max-width: 500px;
+    padding: 5px 60px 5px 10px;
+    border-radius: 20px;
+    border: 1px solid;
+}
 
 /* Aplicaciones de Inicio Sesion */
 
@@ -724,6 +761,10 @@ nav {
     align-items: center;
     min-height: 80vh;
     background-color: #9e9e9e;
+    background-image: url(img/img/otras-img/fondo-inicio-sesion.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 .contenedor-inicio {
@@ -904,10 +945,10 @@ a {
     cursor: pointer;
 }
 
- .info-aporte button:hover {
-        background-color: #CF7D1E;
-        color: #ffffff;
-    }
+.info-aporte button:hover {
+    background-color: #CF7D1E;
+    color: #ffffff;
+}
 
 
 .seccion-final-usuario {
@@ -1468,224 +1509,228 @@ a {
     gap: 22px;
 }
 
-    /*aplicaciones a videoteca*/
+/*aplicaciones a videoteca*/
 
-    .migas {
-        display: flex;
-        flex-direction: row;
-        padding-top: 60px;
-        padding-bottom: 55px;
-        gap: 22px;
-    }
+.migas {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    gap: 22px;
+}
 
-    .palabra-miga {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
+.palabra-miga {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 
-        p.migas-de-pan {
-            font-family: Alegreya Sans SC;
-            font-size: 1.25rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 1.25rem;
-            color: #CF7D1E;
-        }
-    }
-
-    .intro-tutorial {
-        display: flex;
-        flex-direction: row;
-        gap: 60px;
-    }
-
-    .h3-y-filtro {
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .texto-tutorial {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .botones {
-        display: flex;
-        flex-direction: row;
-        gap: 35px;
-
-        input {
-            font-family: Alegreya Sans SC;
-            color: #FFF;
-            text-align: center;
-            font-size: 1.2rem;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 1.8rem;
-        }
-    }
-
-    .texto-tutorial {
-        max-width: 600px;
-    }
-
-    .tutoriales-youtube {
-        display: flex;
-        flex-direction: row;
-        padding-top: 100px;
-        gap: 25px;
-    }
-
-    .filtros {
-        display: flex;
-        flex-direction: column;
-        max-width: 246px;
-        border-radius: 20px;
-        background: #F0F9F5;
-        padding: 93px 30px 0 30px;
-        gap: 65px;
-        justify-content: flex-start;
-    }
-
-    .filtro-superior {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-
-            label {
-                font-family: Alegreya Sans SC;
-                font-size: 1.25rem;
-                font-style: normal;
-                font-weight: 700;
-                line-height: 1.25rem;
-                color: #035557;
-            }
-
-            input {
-                background-color: #cce5e1;
-                border: none;
-                border-radius: 10px;
-                padding: 12px 15px;
-                font-family: Merriweather;
-                font-size: 18px;
-                color: #035557;
-            }
-        }
-    }
-
-
-    .lista-palabras {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-
-        button {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            background-color: #cce5e1;
-            border: none;
-            border-radius: 10px;
-            padding: 5px 12px;
-            color: #035557;
-            font-family: Alegreya;
-            font-size: 1.1rem;
-            font-style: normal;
-        }
-    }
-
-    .filtro-inferior {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-    }
-
-    p.versalita-verde-filtro {
-        color: #035557;
+    p.migas-de-pan {
         font-family: Alegreya Sans SC;
         font-size: 1.25rem;
         font-style: normal;
         font-weight: 700;
         line-height: 1.25rem;
+        color: #CF7D1E;
     }
+}
 
-    .gama {
+.intro-tutorial {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.h3-y-filtro {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.texto-tutorial {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+
+    input {
+        font-family: Alegreya Sans SC;
+        color: #FFF;
+        text-align: center;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+}
+
+.texto-tutorial {
+    max-width: 600px;
+}
+
+.tutoriales-youtube {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    gap: 25px;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    max-width: 246px;
+    border-radius: 20px;
+    background: #F0F9F5;
+    padding: 93px 30px 0 30px;
+    gap: 65px;
+    justify-content: flex-start;
+}
+
+.filtro-superior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    form {
         display: flex;
         flex-direction: column;
-        gap: 15px;
-    }
+        gap: 30px;
 
-    .era {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .checkboxs {
         label {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-family: Alegreya Sans;
-            font-size: 1.2rem;
-            color: #003b3b;
+            font-family: Alegreya Sans SC;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.25rem;
+            color: #035557;
         }
 
         input {
-            width: 1rem;
-            height: 1rem;
-            accent-color: #d98216;
-            cursor: pointer;
+            background-color: #cce5e1;
+            border: none;
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-family: Merriweather;
+            font-size: 18px;
+            color: #035557;
         }
     }
+}
 
-    .caja-filtros {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
+#contraseña {
+    padding: 13px 15px;
+}
 
-    .multimedia-youtube {
-        display: flex;
-        max-width: 750px;
-        align-items: flex-start;
-        align-content: flex-start;
-        gap: 30px 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 60px;
-    }
+.lista-palabras {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 
-    .videos {
+    button {
         display: flex;
-        max-width: 800px;
-        min-width: 240px;
-        padding: 40px;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
+        align-items: center;
+        gap: 12px;
+        background-color: #cce5e1;
+        border: none;
         border-radius: 10px;
-        border: solid #40968C;
+        padding: 5px 12px;
+        color: #035557;
+        font-family: Alegreya;
+        font-size: 1.1rem;
+        font-style: normal;
+    }
+}
+
+.filtro-inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+p.versalita-verde-filtro {
+    color: #035557;
+    font-family: Alegreya Sans SC;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
+.gama {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.era {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkboxs {
+    label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Alegreya Sans;
+        font-size: 1.2rem;
+        color: #003b3b;
     }
 
-    hgroup {
-        p.versalita-sub-youtube {
-            font-family: "Alegreya Sans SC";
-            font-size: 1.5rem;
-            font-style: normal;
-        }
+    input {
+        width: 1rem;
+        height: 1rem;
+        accent-color: #d98216;
+        cursor: pointer;
     }
+}
+
+.caja-filtros {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.multimedia-youtube {
+    display: flex;
+    max-width: 750px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.videos {
+    display: flex;
+    max-width: 800px;
+    min-width: 240px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: solid #40968C;
+}
+
+hgroup {
+    p.versalita-sub-youtube {
+        font-family: "Alegreya Sans SC";
+        font-size: 1.5rem;
+        font-style: normal;
+    }
+}
+
 .videos {
     display: flex;
     max-width: 800px;
@@ -1698,14 +1743,13 @@ a {
     border: solid 2px #40968C;
 }
 
-    p.versalita-fecha {
-        color: #035557;
-        text-align: right;
-        font-family: "Alegreya Sans SC";
-        font-size: 1.3rem;
-        font-style: normal;
-        font-weight: 500;
-    }
+p.versalita-fecha {
+    color: #035557;
+    text-align: right;
+    font-family: "Alegreya Sans SC";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
 }
 
 p.versalita-fecha {

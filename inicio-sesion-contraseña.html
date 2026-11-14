@@ -100,32 +100,34 @@
         </nav>
     </header>
 
-    <main>
+    <main class="perfil-password">
         <section class="contenedor-usuario">
             <div class="contenedor-card-usuario">
                 <h3>Usuario</h3>
-                <p>usuario123@gmail.com</p>
+                <div class="gmail">
+                    <img src="img/img/otras-img/circulo-contraseña-usuario.png" width="30px" height="30px">
+                    <p>usuario123@gmail.com</p>
+                </div>
             </div>
 
             <div class="campo-rellenar">
                 <p>Debes verificar que eres tú para poder continuar</p>
                 <form action="#" method="post" enctype="text/plain">
-                    <label for="contraseña">contraseña</label>
-                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+                    <label for="contraseña" class="versalita">contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required> 
                 </form>
 
                 <div class="checkbox-contraseña">
                     <input type="checkbox" id="mostrar-contraseña">
-                    <label for="mostrar-contraseña">Mostrar contraseña</label>
+                    <label for="mostrar-contraseña">Mostrar contraseña</label> 
                 </div>
-
+                <div class="formulario-correo">
+                    <a href="#">¿Has olvidado tu contraseña?</a>
+                    <a href="usuario.html"><button class="btn-siguiente">Siguiente</button></a>
+                </div>
             </div>
 
-            <div class="formulario-correo">
-                <a href="#">¿Has olvidado tu contraseña?</a>
-                <a href="usuario.html"><button class="btn-siguiente">Siguiente</button></a>
 
-            </div>
         </section>
     </main>
 
