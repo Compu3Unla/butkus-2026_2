@@ -1503,6 +1503,43 @@ footer {
     }
 }
 
+/* Aplicaciones de Conocenos */
+
+
+.contenedor-conocenos {
+    display: flex;
+    gap: 90px;
+    padding: 80px 60px;
+    max-width: 900px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+
+    img {
+        border-radius: 20px;
+    }
+}
+
+.contenedor-card-conocenos {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    img {
+        padding-bottom: 15px;
+    }
+
+
+    p {
+        max-width: 500px;
+        font-size: 18px;
+        
+    }
+
+}
+
+
+
 /* Aplicaciones de Inicio Sesion */
 
 .contenedor {
