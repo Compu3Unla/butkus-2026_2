@@ -1540,6 +1540,17 @@ a {
 .frecuencia_donación {
     display: flex;
     gap: 45px;
+}
+
+/*aplicaciones a videoteca*/
+
+.migas {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 55px;
+    gap: 22px;
+}
 
     /*aplicaciones a videoteca*/
 
@@ -1759,6 +1770,17 @@ a {
             font-style: normal;
         }
     }
+.videos {
+    display: flex;
+    max-width: 800px;
+    min-width: 240px;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 10px;
+    border: solid 2px #40968C;
+}
 
     p.versalita-fecha {
         color: #035557;
@@ -1770,5 +1792,11 @@ a {
     }
 }
 
-
-
+p.versalita-fecha {
+    color: #035557;
+    text-align: right;
+    font-family: "Alegreya Sans SC";
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+}
