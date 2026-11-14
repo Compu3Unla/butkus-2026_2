@@ -713,9 +713,6 @@ nav {
 }
 
 
-
-
-
 /* Aplicaciones de Inicio Sesion */
 
 .contenedor {
@@ -727,53 +724,67 @@ nav {
 }
 
 .contenedor-inicio {
-    display: flex;
-    gap: 90px;
-    padding: 80px 60px;
-    max-width: 900px;
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 880px;
+    padding: 75px 80px;
     border-radius: 20px;
-    background-color: #FFFFFF;
-    color: #072D2E;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
 }
 
 .contenedor-card-inicio {
-    max-width: 300px;
+    flex: 1;
 }
 
-
+.contenedor-card-inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #072D2E;
+    max-width: 250px;
+    margin-top: 15px;
+}
 
 .campo-rellenar {
+    flex: 1.1;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 55px;
 }
 
 .campo-rellenar form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
-.campo-rellenar p,
-a {
-    color: #CF7D1E;
-
-}
-
-.formulario-correo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.campo-rellenar input {
     width: 100%;
-    margin-top: 40px;
+    padding: 13px 15px;
+    border: 1px solid #0E0E36;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #072D2E;
+}
+
+.campo-rellenar > div > p {
+    font-size: 18px;
+    color: #CF7D1E;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.formulario-correo a {
+    font-size: 18px;
 }
 
 
 
-.versalita {
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-weight: 600;
-}
+
+
+
 
 
 /* Aplicaciones de Usuario */
@@ -784,6 +795,19 @@ a {
     max-width: 1350px;
     margin: 50px auto;
 }
+
+.correo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #5c6f73;
+    border-radius: 50px;
+    padding: 5px 35px 5px 7px;
+    font-size: 13px;
+    color: #0b3336;
+}
+
+
 
 .contenedor-perfil {
     display: flex;
@@ -947,6 +971,66 @@ a {
     font-weight: 500;
     cursor: pointer;
 }
+
+
+
+
+
+
+/* Comienza CONTRASEÑA */
+
+
+.contenedor-card-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+.contenedor-card-usuario h3 {
+    font-size: 26px;
+    font-weight: normal;
+    color: #0b3336;
+}
+
+
+.caja-correo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #5c6f73;
+    border-radius: 50px;
+    padding: 5px 35px 5px 7px;
+    width: fit-content;
+}
+
+
+.espacio-circulo {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #044d4d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Comienza footer */
@@ -1685,3 +1769,6 @@ a {
         font-weight: 500;
     }
 }
+
+
+
