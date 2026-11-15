@@ -226,6 +226,10 @@ main {
     gap: 45px;
 }
 
+.menu-hamburguesa {
+    display: none;
+}
+
 .navegador a {
     color: #fcfcfc;
     font-family: "Alegreya Sans SC", sans-serif;
@@ -425,7 +429,6 @@ main {
 }
 
 .img-carrusel {
-    /* No estoy segura si hacerlo asi, es la mejor opción que encontré */
     filter: drop-shadow(0px 6px 12px #CF7D1E);
 }
 
@@ -670,7 +673,6 @@ main {
     background-color: #40968C4d;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-
 }
 
 
@@ -1226,7 +1228,14 @@ footer {
 }
 
 
+
+
+
 /* Aplicaciones de Index */
+
+#animacion-estatica {
+    display: none;
+}
 
 .catalogo-carrusel {
     display: flex;
@@ -2111,3 +2120,124 @@ p.versalita-fecha {
     font-size: 17px;
     color: #073435;
 }
+
+
+
+/* version MOBILE*/
+
+
+@media screen and (max-width: 720px) {
+    header {
+        background-color: #072D2E;
+    }
+
+    #nav-contenedor {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        justify-content: center;
+        padding-bottom: 5px;
+        padding-top: 5px;
+
+        .menu-hamburguesa {
+            display: block;
+            width: 42px;
+            height: 42px;
+            padding-right: 10px;
+        }
+
+        .navegador {
+            display: none;
+        }
+
+        .bk-logo {
+            display: none;
+        }
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        width: 100%;
+    }
+
+    .catalogo-carrusel {
+        overflow: hidden;
+    }
+
+    .contenedor-buscador {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid #ffffff;
+        background-color: #072D2E;
+        border-radius: 7px;
+        padding: 5px 45px 5px 10px;
+    }
+
+    .animacion-inicio-butkus {
+        display: none;
+    }
+
+    #animacion-estatica {
+        display: block;
+        width: 246px;
+        height: 171px;
+    }
+
+    .contenedor-carrusel-novedades {
+        display: none;
+    }
+
+    .catalogo-carrusel {
+        overflow: hidden;
+        max-width: 720px;
+    }
+
+
+
+
+
+
+    .recursos {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .documentacion-columna_izq,
+    .documentacion-columna_der {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100% !important;
+    }
+
+    .recursos article,
+    .recursos .boton-impresion,
+    .recursos .boton-reparacion,
+    .recursos .boton-manuales,
+    .recursos .boton-compatibilidad,
+    .recursos .boton-antiguas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+
+    }
+
+    .recursos article h3 {
+        font-size: 1.2rem;
+        line-height: 1.3;
+    }
+}
+
+
