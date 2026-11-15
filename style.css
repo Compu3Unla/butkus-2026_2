@@ -1533,7 +1533,7 @@ footer {
     p {
         max-width: 500px;
         font-size: 18px;
-        
+
     }
 
 }
@@ -1945,4 +1945,144 @@ p.versalita-fecha {
     font-size: 1.3rem;
     font-style: normal;
     font-weight: 500;
+}
+
+
+/* FONDO ANIMADO - INICIO DE SESIÓN */
+
+.fondo-animado {
+    background-image: url("img/img/otras-img/inicio-sesion-fondo.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.fondo-animacion-pagina-contrasena {
+    background-image: url(img/img/otras-img/inicio-sesion-fondo.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/* TARJETA BLANCA - INICIO SESION CONTRASEÑA */
+
+.fondo-animado-pagina-contrasena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RECTANGULO BLANCO */
+
+.contenedor-usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 70px;
+    background-color: white;
+    max-width: 900px;
+    padding: 59px;
+    border-radius: 18px;
+    box-sizing: border-box;
+    align-content: flex-start;
+}
+
+/* COLUMNA IZQUIERDA */
+
+
+.contenedor-card-usuario {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    max-width: 400px;
+    margin-right: 50px;
+}
+
+.gmail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    border-radius: 21px;
+    border: 1px solid #072d2e;
+    padding: 8px 35px 8px 15px;
+}
+
+/* COLUMNA DERECHA */
+
+.campo-rellenar {
+    width: 60%;
+
+
+    p {
+        font-family: alegreya sans;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1rem;
+        color: #072D2E;
+        max-width: 500px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* INPUT DE CONTRASEÑA */
+
+.fondo-animado-pagina-contrasena input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* CHECKBOX Y TEXTO JUNTOS */
+
+.checkbox-contraseña {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.checkbox-contraseña input {
+    width: auto;
+    margin: 0;
+}
+
+/* BOTONES Y ENLACES */
+
+.formulario-correo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* CONTENEDOR DEL USUARIO */
+
+.usuario-email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 280px;
+    padding: 10px 12px;
+    border: 1px solid #bcbcbc;
+    border-radius: 25px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+/* TEXTO DEL CORREO */
+
+.usuario-email p {
+    margin: 0;
+    font-size: 17px;
+    color: #073435;
 }
