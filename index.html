@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Butkus | Inicio </title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico.ico">
+    <link rel="icon" type="image/x-icon" href="img/img/otras-img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -27,9 +27,10 @@
 </head>
 
 <body>
-   <header>
-        <nav>
-            <img src="img/img/logos/bk-logo-header.svg" alt="logo de Butkus" width="67" height="67">
+    <header>
+        <nav id="nav-contenedor" >
+            <img class="bk-logo" src="img/img/logos/bk-logo-header.svg" alt="logo de Butkus" width="67" height="67">
+
             <div class="navegador">
                 <a href="conocenos.html">conocenos</a>
                 <details class="menu-desplegable">
@@ -80,6 +81,10 @@
                 <a href="#">contactanos</a>
             </div>
 
+            <div> 
+                <img class="menu-hamburguesa" src="img/img/mobile/menu.png" height="42px" width="42px" alt="menu hamburguesa">
+            </div>
+
 
             <div>
                 <form action="/buscar" method="get" enctype="text/plain" class="contenedor-buscador">
@@ -104,9 +109,14 @@
 
 
     <main class="index">
-        <section class="animacion-inicio-butkus">
-            <img src="img/img/otras-img/animacion-butkus-inicio.gif" alt="animacion-butkus-inicio" />
+        <section>
+            <img class="animacion-inicio-butkus" src="img/img/otras-img/animacion-butkus-inicio.gif"
+                alt="animacion-butkus-inicio" />
+
+            <img id="animacion-estatica" src="img/img/mobile/inicio-presentacion.png" alt="animacion-celular"
+                width="246px" height="171px" />
         </section>
+
         <h1>Butkus Camera Manual Library</h1>
         <section class="contenedor-carrusel-novedades">
             <div class="flechas">
