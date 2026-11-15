@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Butkus | Donación </title>
+    <title>Butkus | Inicio </title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,6 +22,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <script src="animaciones.js"></script>
+
 </head>
 
 <body>
@@ -29,7 +31,7 @@
         <nav>
             <img src="img/img/logos/bk-logo-header.svg" alt="logo de Butkus" width="67" height="67">
             <div class="navegador">
-                <a href="conocenos.html">conocenos</a>
+                <a href="#">conocenos</a>
                 <details class="menu-desplegable">
                     <summary>recursos</summary>
 
@@ -112,14 +114,20 @@
                 <p class="blanco_bold">Solo el 2% de las personas que leen Butkus Manual Library donan, así que tu
                     donación es realmente importante</p>
                 <div class="frecuencia_donación">
-                    <label class="dona_frecuencia">Solo una vez<input type="radio" name="frecuencia"
-                            value="Solo una vez" id>
+                    <div class="opción-frecuencia">
+                        <label class="dona_frecuencia">Solo una vez<input type="radio" name="frecuencia"
+                                value="Solo una vez" id>
+                    </div>
+                    <div class="opción-freciencia">
                         <label class="dona_frecuencia">Donar mensualmente<input type="radio" name="frecuencia"
                                 value="Donar mensualmente" id>
-                            <label class="dona_frecuencia">Anual<input type="radio" name="frecuencia" value="Anual" id>
+                    </div>
+                    <div class="opción-freciencia">
+                        <label class="dona_frecuencia">Anual<input type="radio" name="frecuencia" value="Anual" id>
+                    </div>
                 </div>
 
-                <a href="#"><button class="btn-marco-verde">Donar ahora</button></a>
+                <a href="#"><button class="boton-donar">Donar ahora</button></a>
                 <p class="subrayado_donación">Información sobre deducibilidad fiscal</p>
             </div>
         </section>
@@ -183,7 +191,6 @@
             </div>
         </div>
     </footer>
-
 
 </body>
 

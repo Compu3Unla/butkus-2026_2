@@ -1607,7 +1607,6 @@ a {
 
 
 
-
 /* Aplicaciones de Donacion */
 
 .main-donacion {
@@ -1628,7 +1627,7 @@ a {
     border-radius: 20px;
     background-color: #FFFFFF;
     color: #072D2E;
-    margin: 60px;
+    margin: 90px;
 }
 
 .donación_columna_izq {
@@ -1661,41 +1660,61 @@ a {
     label {
         color: white;
         display: flex;
+
+        .btn-marco-verde {
+            border-radius: 10px;
+            padding: 10px;
+            border-color: white;
+            background-color: #035557;
+            font-family: Alegreya Sans;
+            font-size: 1rem;
+            color: white;
+            font-weight: 500;
+            font-style: normal;
+
+        }
     }
 
-    .subrayado_donación {
-        color: white;
-        font-size: 1rem;
-    }
-
-    .btn-marco-verde {
-        border-radius: 10px;
-        padding: 10px;
-        border-color: white;
-        background-color: #035557;
-        font-family: Alegreya Sans, sans-serif;
-        font-size: 1rem;
-        color: white;
-        font-weight: 500;
+    .blanco_bold {
+        font-family: "Alegreya Sans", serif;
+        font-size: 1.3rem;
         font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        color: white;
+    }
 
+    .frecuencia_donación {
+        display: flex;
+        gap: 45px;
     }
 }
 
-.blanco_bold {
-    font-family: "Alegreya Sans", sans-serif;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    color: white;
-}
-
-.frecuencia_donación {
+.dona_frecuencia {
     display: flex;
-    gap: 45px;
+    flex-direction: row;
+    gap: 10px;
 }
 
+.subrayado_donación {
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border-bottom: 1px solid #FFF;
+}
+
+.boton-donar {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-size: 1rem;
+}
 
 
 /*aplicaciones a videoteca*/
