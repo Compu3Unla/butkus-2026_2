@@ -1505,6 +1505,12 @@ footer {
 
 /* Aplicaciones de Conocenos */
 
+#fondo-conocenos {
+    background-image: url(img/img/otras-img/inicio-sesion-fondo.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .contenedor-conocenos {
     display: flex;
