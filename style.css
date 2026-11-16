@@ -388,6 +388,258 @@ main {
     }
 }
 
+.carrusel-mobile {
+    display: none;
+}
+
+#animacion-estatica {
+    display: none;
+}
+
+.documentacion-index {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    max-width: 70%;
+
+    .info-documentacion-index {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 30px 0 30px 0;
+    }
+
+    .recursos {
+        display: flex;
+        gap: 30px;
+
+        .documentacion-columna_izq {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 50%;
+
+            article {
+                border-radius: 25px;
+                border-color: #035557;
+                border-style: solid;
+                border-width: 2px;
+                padding: 35px;
+                display: flex;
+                gap: 20px;
+                flex-grow: 1;
+
+                .info-btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+
+                img {
+                    margin: 20px;
+                }
+            }
+        }
+
+        .documentacion-columna_der {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 50%;
+
+            article {
+                border-radius: 25px;
+                border-color: #035557;
+                border-style: solid;
+                border-width: 2px;
+                padding: 35px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                flex-grow: 1;
+
+                img {
+                    margin: 20px;
+                }
+
+                .botones-formularios {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+
+                .info-btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+.ayuda {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+}
+
+
+.estadisticas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 40px 0;
+
+    h3 {
+        max-width: 55%;
+        text-align: center;
+    }
+
+    p {
+        max-width: 55%;
+        text-align: center;
+    }
+}
+
+.contenedor-cards-estadisticas {
+    display: flex;
+    margin: 20px;
+    width: 100%;
+    justify-content: space-around;
+
+    .presentacion-tema {
+        display: flex;
+        gap: 20px;
+        max-width: 50%;
+    }
+
+    h3 {
+        color: #CF7D1E;
+        text-align: left;
+    }
+
+    .card-estadisticas {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 350px;
+        margin-top: 30px;
+
+        p {
+            text-align: left;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
+.atencion {
+    background-color: #B12019;
+    border-radius: 30px;
+    padding: 40px 0 40px 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+    .nav {
+        font-family: Alegreya Sans SC, sans-serif;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+        color: white;
+    }
+}
+
+.donacion {
+    padding: 40px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-marco-naranja {
+        margin: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        border-color: #CF7D1E;
+        background-color: white;
+        font-family: Alegreya Sans, sans-serif;
+        font-size: 1rem;
+        color: #CF7D1E;
+        font-weight: 500;
+        font-style: normal;
+    }
+}
+
+.frase-donacion {
+    font-family: Alegreya Sans, sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    text-align: center;
+    font-style: normal;
+    color: #072D2E;
+
+    .italic {
+        font-style: italic;
+    }
+}
+
+.newsletter {
+    background-color: #035557;
+    padding: 40px 0 40px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+    .nav {
+        font-family: Alegreya Sans SC, sans-serif;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.25rem;
+        color: white;
+    }
+
+    form {
+        display: flex;
+        gap: 10px;
+
+        #email {
+            height: 30px;
+            width: 180px;
+            font-family: Alegreya Sans, sans-serif;
+            font-size: 1rem;
+            color: #072D2E;
+            font-weight: 400;
+            padding: 0 10px 0 10px;
+        }
+
+        .boton-newsletter {
+            background-color: #CF7D1E;
+            font-family: Alegreya Sans, sans-serif;
+            font-size: 1rem;
+            color: white;
+            font-weight: 500;
+            font-style: normal;
+            border-radius: 10px;
+            padding: 0 10px 0 10px;
+        }
+    }
+}
+
+
 
 /* Index- CARRUSEL */
 
@@ -1228,290 +1480,6 @@ footer {
 }
 
 
-
-
-
-/* Aplicaciones de Index */
-
-#animacion-estatica {
-    display: none;
-}
-
-.catalogo-carrusel {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    .nav {
-        font-family: Alegreya Sans SC, sans-serif;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1.25rem;
-        color: #CF7D1E;
-    }
-
-    .info-catalogo-index {
-        display: flex;
-        flex-direction: column;
-        padding: 30px 0 30px 0;
-
-        .lpm {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
-
-    .imagenes-catalogo-index {
-        margin: 0 auto;
-        display: flex;
-        gap: 30px;
-    }
-}
-
-.documentacion-index {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    max-width: 70%;
-
-    .info-documentacion-index {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 30px 0 30px 0;
-    }
-
-    .recursos {
-        display: flex;
-        gap: 30px;
-
-        .documentacion-columna_izq {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            width: 50%;
-
-            article {
-                border-radius: 25px;
-                border-color: #035557;
-                border-style: solid;
-                border-width: 2px;
-                padding: 35px;
-                display: flex;
-                gap: 20px;
-                flex-grow: 1;
-
-                .info-btn {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                }
-
-                img {
-                    margin: 20px;
-                }
-            }
-        }
-
-        .documentacion-columna_der {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            width: 50%;
-
-            article {
-                border-radius: 25px;
-                border-color: #035557;
-                border-style: solid;
-                border-width: 2px;
-                padding: 35px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 20px;
-                flex-grow: 1;
-
-                img {
-                    margin: 20px;
-                }
-
-                .botones-formularios {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 10px;
-                }
-
-                .info-btn {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    gap: 10px;
-                }
-            }
-        }
-    }
-}
-
-.ayuda {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 40px;
-}
-
-
-.estadisticas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0 40px 0;
-
-    h3 {
-        max-width: 55%;
-        text-align: center;
-    }
-
-    p {
-        max-width: 55%;
-        text-align: center;
-    }
-}
-
-.contenedor-cards-estadisticas {
-    display: flex;
-    margin: 20px;
-    width: 100%;
-    justify-content: space-around;
-
-    .presentacion-tema {
-        display: flex;
-        gap: 20px;
-        max-width: 50%;
-    }
-
-    h3 {
-        color: #CF7D1E;
-        text-align: left;
-    }
-
-    .card-estadisticas {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        max-width: 350px;
-        margin-top: 30px;
-
-        p {
-            text-align: left;
-            font-size: 1.1rem;
-        }
-    }
-}
-
-
-.atencion {
-    background-color: #B12019;
-    border-radius: 30px;
-    padding: 40px 0 40px 0;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-
-    .nav {
-        font-family: Alegreya Sans SC, sans-serif;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.25rem;
-        color: white;
-    }
-}
-
-.donacion {
-    padding: 40px 0 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .btn-marco-naranja {
-        margin: 20px;
-        border-radius: 10px;
-        padding: 10px;
-        border-color: #CF7D1E;
-        background-color: white;
-        font-family: Alegreya Sans, sans-serif;
-        font-size: 1rem;
-        color: #CF7D1E;
-        font-weight: 500;
-        font-style: normal;
-    }
-}
-
-.frase-donacion {
-    font-family: Alegreya Sans, sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 2.5rem;
-    text-align: center;
-    font-style: normal;
-    color: #072D2E;
-
-    .italic {
-        font-style: italic;
-    }
-}
-
-.newsletter {
-    background-color: #035557;
-    padding: 40px 0 40px 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-
-    .nav {
-        font-family: Alegreya Sans SC, sans-serif;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.25rem;
-        color: white;
-    }
-
-    form {
-        display: flex;
-        gap: 10px;
-
-        #email {
-            height: 30px;
-            width: 180px;
-            font-family: Alegreya Sans, sans-serif;
-            font-size: 1rem;
-            color: #072D2E;
-            font-weight: 400;
-            padding: 0 10px 0 10px;
-        }
-
-        .boton-newsletter {
-            background-color: #CF7D1E;
-            font-family: Alegreya Sans, sans-serif;
-            font-size: 1rem;
-            color: white;
-            font-weight: 500;
-            font-style: normal;
-            border-radius: 10px;
-            padding: 0 10px 0 10px;
-        }
-    }
-}
-
 /* Aplicaciones de Conocenos */
 
 #fondo-conocenos {
@@ -2126,7 +2094,7 @@ p.versalita-fecha {
 /* version MOBILE*/
 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 500px) {
     header {
         background-color: #072D2E;
     }
@@ -2190,14 +2158,30 @@ p.versalita-fecha {
         display: none;
     }
 
-    .catalogo-carrusel {
+    .carrusel-mobile {
+        display: block;
+        width: 100%;
         overflow: hidden;
-        max-width: 720px;
     }
 
+    .contenedor-imagenes {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
 
+        img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            flex-shrink: 0;
+            scroll-snap-align: center;
+        }
+    }
 
-
+    .catalogo-carrusel {
+        overflow: hidden;
+        max-width: 500px;
+    }
 
 
     .recursos {
@@ -2234,10 +2218,116 @@ p.versalita-fecha {
 
     }
 
+    #tercer-columna {
+        padding-left: 28px;
+    }
+
     .recursos article h3 {
         font-size: 1.2rem;
         line-height: 1.3;
     }
+
+    .info-catalogo-index {
+        width: 100%;
+        padding: 30px 0 30px 0;
+    }
+
+    .lpm {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            display: flex;
+            justify-content: end;
+        }
+    }
+
+    .imagenes-catalogo-index {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        padding: 10px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    .imagenes-catalogo-index::-webkit-scrollbar {
+        display: none;
+    }
+
+    .imagenes-catalogo-index {
+        scrollbar-width: none;
+    }
+
+    .imagenes-catalogo-index .tarjeta-catalogo {
+        flex: 0 0 280px;
+        width: 280px;
+        height: 200px;
+        scroll-snap-align: start;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .imagenes-catalogo-index .tarjeta-catalogo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .documentacion-index {
+        img {
+            transform: scale(0.8);
+        }
+    }
+
+    .atencion {
+        width: 95%;
+        text-align: center;
+
+        .blanco {
+            font-size: 1.6rem;
+        }
+
+        p {
+            max-width: 80%;
+        }
+    }
+
+    .frase-donacion {
+        font-size: 1.8rem;
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .info-newsletter {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+
+        .blanco {
+            font-size: 1.6rem;
+        }
+    }
+
+    .footer-arriba {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-abajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
 }
-
-
